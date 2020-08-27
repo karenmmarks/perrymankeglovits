@@ -1,2 +1,2 @@
 # perrymankeglovits
-perrymankeglovits eact web application
+perrymankeglovits React web application
