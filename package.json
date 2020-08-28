@@ -1,0 +1,32 @@
+{
+  "name": "perrymankeglovits",
+  "version": "1.0.0",
+  "description": "Perrymankeglovits React Front-End",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 4000 index.html",
+    "build": "rm -rf dist && parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karenmmarks/perrymankeglovits.git"
+  },
+  "author": "Karen Marks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karenmmarks/perrymankeglovits/issues"
+  },
+  "homepage": "https://github.com/karenmmarks/perrymankeglovits#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "parcel": "^1.12.4",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-plugin-react": "^7.20.6"
+  }
+}
