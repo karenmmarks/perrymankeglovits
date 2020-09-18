@@ -4,8 +4,8 @@
   "description": "Perrymankeglovits React Front-End",
   "main": "index.js",
   "scripts": {
-    "start": "parcel -p 4000 index.html",
-    "build": "rm -rf dist && parcel build index.html --public-url ./"
+    "start": "parcel -p 4000 src/index.html",
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
