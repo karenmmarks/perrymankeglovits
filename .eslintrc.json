@@ -18,5 +18,7 @@
         "react"
     ],
     "rules": {
+        "linebreak-style": 0,
+        "eslint linebreak-style": [0, "error", "unix"]
     }
 }
