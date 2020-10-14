@@ -22,12 +22,13 @@ const Header = () => (
         <Nav.Link href="home">Home</Nav.Link>
         <Nav.Link href="about">About</Nav.Link>
         <Nav.Link href="contact">Contact</Nav.Link>
-        <NavDropdown title="Archives" id="basic-nav-dropdown">
-          <NavDropdown.Item href="pressreleases">Press Releases</NavDropdown.Item>
-          <NavDropdown.Item href="spiritawards">Spirit Awards</NavDropdown.Item>
-          <NavDropdown.Item href="photogallery">Photo Gallery</NavDropdown.Item>
-          <NavDropdown.Item href="videohighlights">Video Highlights</NavDropdown.Item>
-        </NavDropdown>
+        <Nav.Link href="archives">Archives</Nav.Link>
+        {/* <NavDropdown title="Archives" id="basic-nav-dropdown"> */}
+        {/* <NavDropdown.Item href="pressreleases">Press Releases</NavDropdown.Item> */}
+        {/* <NavDropdown.Item href="spiritawards">Spirit Awards</NavDropdown.Item> */}
+        {/* <NavDropdown.Item href="photogallery">Photo Gallery</NavDropdown.Item> */}
+        {/* <NavDropdown.Item href="videohighlights">Video Highlights</NavDropdown.Item> */}
+        {/* </NavDropdown> */}
       </Nav>
       {/* <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
