@@ -16,7 +16,6 @@ import Archives from './Components/Views/Archives/Archives';
 const App = () => (
   <>
     <Header />
-
     <BrowserRouter>
       <Switch>
         <Route path="/home" component={Home} />
@@ -28,7 +27,6 @@ const App = () => (
         {/* <Route path="/archives/videohighlights" component={VideoHighlights} /> */}
       </Switch>
     </BrowserRouter>
-
   </>
 
 );
