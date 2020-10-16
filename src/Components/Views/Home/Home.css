@@ -198,12 +198,6 @@ td {
   padding-left: 6px;
 }
 
-.modal-backdrop {
-  z-index: 41020 !important;
-}
-
-
-
 /*------------------------RESPONSIVE CSS--------------------------*/
 @media screen and (min-width:768px) {
   .brand {
