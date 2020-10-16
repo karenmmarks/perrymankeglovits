@@ -12,25 +12,34 @@ const Archives = () => {
 
   return (
     <>
-      <h1>Archives</h1>
-      <Tabs
-        id="controlled-tab-example"
-        activeKey={key}
-        onSelect={(k) => setKey(k)}
-      >
-        <Tab eventKey="PressReleases" title="Press Releases">
-          <PressReleases />
-        </Tab>
-        <Tab eventKey="SpiritAwards" title="Spirit Awards">
-          <SpiritAwards />
-        </Tab>
-        <Tab eventKey="PhotoGallery" title="Photo Gallery">
-          <PhotoGallery />
-        </Tab>
-        <Tab eventKey="VideoHighlights" title="Video Highlights">
-          <VideoHighlights />
-        </Tab>
-      </Tabs>
+      <div className="container page">
+        <div className="row">
+          <div className="box">
+            <div className="col-lg-12 mx-auto">
+              <h1>Archives</h1>
+              <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+              >
+                <Tab eventKey="PressReleases" title="Press Releases">
+                  <PressReleases />
+                </Tab>
+                <Tab eventKey="SpiritAwards" title="Spirit Awards">
+                  <SpiritAwards />
+                </Tab>
+                <Tab eventKey="PhotoGallery" title="Photo Gallery">
+                  <PhotoGallery />
+                </Tab>
+                <Tab eventKey="VideoHighlights" title="Video Highlights">
+                  <VideoHighlights />
+                </Tab>
+              </Tabs>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </>
 
   );
