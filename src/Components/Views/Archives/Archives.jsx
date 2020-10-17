@@ -1,11 +1,12 @@
+/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
 import './Archives.css';
-import PressReleases from './PressReleases';
-import SpiritAwards from './SpiritAwards';
-import PhotoGallery from './PhotoGallery';
-import VideoHighlights from './VideoHighlights';
+import PressReleases from './PressReleases.jsx';
+import SpiritAwards from './SpiritAwards.jsx';
+import PhotoGallery from './PhotoGallery.jsx';
+import VideoHighlights from './VideoHighlights.jsx';
 
 const Archives = () => {
   const [key, setKey] = useState('PressReleases');

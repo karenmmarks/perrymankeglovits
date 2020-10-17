@@ -18,6 +18,7 @@
         "react"
     ],
     "rules": {
+        "import/extensions": [2,"always"],
         "linebreak-style": 0,
         "eslint linebreak-style": [0, "error", "unix"]
     }

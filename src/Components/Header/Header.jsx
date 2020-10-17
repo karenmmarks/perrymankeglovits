@@ -1,7 +1,8 @@
+/* eslint-disable import/extensions */
 import React, { useState } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import PKLogo from '../../Assets/Images/pklogo.jpg';
-import DonateModal from '../Views/Donate/DonateModal';
+import DonateModal from '../Views/Donate/DonateModal.jsx';
 
 import './Header.css';
 
@@ -9,9 +10,7 @@ const Header = () => {
   const [visible, setVisible] = useState(false);
 
   let modal;
-  if (visible) {
-    modal = <DonateModal visible={visible} setVisible={setVisible} />;
-  }
+  if (visible) modal = <DonateModal visible={visible} setVisible={setVisible} />;
 
   return (
     <>
@@ -40,10 +39,8 @@ const Header = () => {
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="contact">Contact</Nav.Link>
             <Nav.Link href="archives">Archives</Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
-
       </Navbar>
     </>
   );
