@@ -86,8 +86,8 @@ const About = () => (
             </h2>
             <hr />
             <br />
-            <div className="col-md-9 text-center">
-              <img className="img-responsive w-100 mx-auto" src={HOMECOLLAGE2} alt="Perryman Keglovits Tribute Basketball Game collage of photos" />
+            <div className="col-lg-12 text-center">
+              <img className="img-responsive w-100 center-block mb-2" src={HOMECOLLAGE2} alt="Perryman Keglovits Tribute Basketball Game collage of photos" />
               <br />
 
               <p className="text-left">
@@ -97,8 +97,10 @@ const About = () => (
                 The Perryman and Keglovits All-Star Tribute Game celebrates the lives of local basketball stars Arthur Perryman and Al Keglovits, and all who have fought the battle of cancer.
               </p>
             </div>
-            <div className="col-md-9 text-center">
-              <p className="text-left"><strong>Our mission to celebrate the lives of those who have fought the battle of cancer is an important one to us.</strong></p>
+            <div className="col-lg-12 text-center">
+              <p className="text-left">
+                <strong>Our mission to celebrate the lives of those who have fought the battle of cancer is an important one to us.</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -116,9 +118,13 @@ const About = () => (
           </div>
           <img className="img-responsive float-right ml-2" src={AL} alt="Photo of Al Keglovits" />
           <p>
-            {' '}
-            Al Keglovits was a father, a husband, a teacher, a coach, a bartender, a comedian, a New York Yankees fan, a golfer, and a friend to all who knew him. Fighting Cancer, seeing how he fought it was an inspiration to all of us. Al Keglovits, was one of those guys who had a dynamic personality. Kids, colleagues and all opponents were drawn towards his magnetic charm. Al drew you closer to him. He knew he had a fight on his hands when he was diagnosed with cancer. He fought it right up to the end. He never, never quit. Unfortunately he couldn't rally one more time. What is important is what the Man, Al Keglovits, did with his life. The example set was one of courage. He loved his Family, he loved his Friends and he loved Basketball. Coaching and teaching were instinctive for Keglovits. He will be remembered by all his players, friends, those he toasted life to. Coach Keglovits, will always be remembered for his tremendous ever so dry sense of humor. He was one of those guys you always wanted to be around. Al made you feel comfortable but watch out for the next zinger, it was probably going to be aimed at you. Among all of his positive traits, Al Keglovits will be most remembered by his family and friends for his sense of humor and his love for the game of basketball.
-
+            Al Keglovits was a father, a husband, a teacher, a coach, a bartender, a comedian, a New York Yankees fan, a golfer, and a friend to all who knew him. Al Keglovits, was one of those guys who had a dynamic personality. Kids, colleagues and all opponents were drawn towards his magnetic charm. Al drew you closer to him.
+          </p>
+          <p>
+            Fighting Cancer, seeing how he fought it was an inspiration to all of us.  He knew he had a fight on his hands when he was diagnosed with cancer. He fought it right up to the end. He never, never quit. Unfortunately he couldn't rally one more time.
+          </p>
+          <p>
+            What is important is what the Man, Al Keglovits, did with his life. The example set was one of courage. He loved his Family, he loved his Friends and he loved Basketball. Coaching and teaching were instinctive for Keglovits. He will be remembered by all his players, friends, those he toasted life to. Coach Keglovits, will always be remembered for his tremendous ever so dry sense of humor. He was one of those guys you always wanted to be around. Al made you feel comfortable but watch out for the next zinger, it was probably going to be aimed at you. Among all of his positive traits, Al Keglovits will be most remembered by his family and friends for his sense of humor and his love for the game of basketball.
           </p>
         </div>
       </div>
@@ -129,46 +135,42 @@ const About = () => (
             <hr />
             <h2 className="intro-text text-center">
               Remembering
-              <strong>Arthur Perryman</strong>
+              <strong> Arthur Perryman</strong>
             </h2>
             <hr />
           </div>
-
           <img className="img-responsive float-left mr-2" src={ART} alt="Photo of Arthur PerryMan" />
 
           <p>
             Loved and cared for all his peers, Arthur never used profanity; he was gentle, kind and loving. I never once heard anyone say anything negative about him. He was unselfish and thought of others before himself. His family was very important to him. He was a caring, thoughtful brother and son. Arthur was never alone, always with his friends or his sisters.
           </p>
-          <br />
           {' '}
-          <br />
-
-          <strong>Athletic Achievements:</strong>
-          <ul className="arthur">
+          <p>
+            {' '}
+            <strong>Athletic Achievements:</strong>
+            {' '}
+          </p>
+          <ul className="arthur overflow-hidden">
             <li>Earned four varsity basketball letters</li>
             <li>Started all 105 varsity basketball games during his 4 year career at East Stroudsburg South</li>
-            <li>Most Valuable Athlete 1992, 1993 ,1994</li>
+            <li>Most Valuable Athlete 1992, 1993, 1994</li>
             <li>Leading scorer in ESHS basketball history with 1,735</li>
             <li>First team All-Monroe County 1992, 1993, 1994</li>
             <li>All-Centennial League 1993, 1994</li>
             <li>All-Allentown Morning Call Newspaper 1994</li>
-            <li>Averaged 28.3 points per game in the 1994 P.I.A.A. State Basketball Tournment</li>
+            <li>Averaged 28.3 points per game in the 1994 P.I.A.A. State Basketball Tournament</li>
           </ul>
-
           <p>
+            Believe it or not, Arthur didn't care how many points he scored, he only cared if the team won.
+            <br />
             <strong>
-              Believe it or not, Arthur didn't care how many points he scored.
-              <br />
-              {' '}
-              He only cared if the team won.
-              GREAT TEAM PLAYER!
+              HE WAS A GREAT TEAM PLAYER!
             </strong>
-
           </p>
         </div>
       </div>
 
-      <div className="row">
+      <div className="row d-block">
         <div className="box">
           <div className="col-lg-12">
             <hr />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter, Switch, Route,
+  BrowserRouter, Switch, Route, Redirect,
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header';
@@ -18,6 +18,11 @@ const App = () => (
     <Header />
     <BrowserRouter>
       <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => <Redirect to="/home" />}
+        />
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
