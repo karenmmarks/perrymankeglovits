@@ -1,11 +1,12 @@
 import React from 'react';
+import HOMECOLLAGE2 from '../../../Assets/Images/home_collage2.jpg';
+import AL from '../../../Assets/Images/al.jpg';
+import ART from '../../../Assets/Images/art.jpg';
 
 import './About.css';
 
 const About = () => (
   <>
-    {/* <!-- Place this within the <head> tag or just before the end of your <body> tag. --> */}
-    <script src="https://awesome-table.com/AwesomeTableInclude.js" />
     <br />
     <div className="container page">
 
@@ -86,8 +87,7 @@ const About = () => (
             <hr />
             <br />
             <div className="col-md-9 text-center">
-              <p>IMAGE GOES HERE</p>
-              {/* <img class="img-responsive img-border center-block" src="images/home_collage2.jpg" alt="Perryman Keglovits Tribute Basketball Game collage of photos"> */}
+              <img className="img-responsive w-100 mx-auto" src={HOMECOLLAGE2} alt="Perryman Keglovits Tribute Basketball Game collage of photos" />
               <br />
 
               <p className="text-left">
@@ -114,8 +114,7 @@ const About = () => (
             </h2>
             <hr />
           </div>
-          <p>IMAGE GOES HERE</p>
-          {/* <img src="img/al.jpg" class="action_photo_a" style="float: right;" alt="Photo of Al Keglovits"/> */}
+          <img className="img-responsive float-right ml-2" src={AL} alt="Photo of Al Keglovits" />
           <p>
             {' '}
             Al Keglovits was a father, a husband, a teacher, a coach, a bartender, a comedian, a New York Yankees fan, a golfer, and a friend to all who knew him. Fighting Cancer, seeing how he fought it was an inspiration to all of us. Al Keglovits, was one of those guys who had a dynamic personality. Kids, colleagues and all opponents were drawn towards his magnetic charm. Al drew you closer to him. He knew he had a fight on his hands when he was diagnosed with cancer. He fought it right up to the end. He never, never quit. Unfortunately he couldn't rally one more time. What is important is what the Man, Al Keglovits, did with his life. The example set was one of courage. He loved his Family, he loved his Friends and he loved Basketball. Coaching and teaching were instinctive for Keglovits. He will be remembered by all his players, friends, those he toasted life to. Coach Keglovits, will always be remembered for his tremendous ever so dry sense of humor. He was one of those guys you always wanted to be around. Al made you feel comfortable but watch out for the next zinger, it was probably going to be aimed at you. Among all of his positive traits, Al Keglovits will be most remembered by his family and friends for his sense of humor and his love for the game of basketball.
@@ -134,8 +133,9 @@ const About = () => (
             </h2>
             <hr />
           </div>
-          <p>IMAGE GOES HERE</p>
-          {/* <img src="img/art.jpg" class="action_photo_a" style="float: left; text-align:center;" alt="Photo of Arthur Perryman" /> */}
+
+          <img className="img-responsive float-left mr-2" src={ART} alt="Photo of Arthur PerryMan" />
+
           <p>
             Loved and cared for all his peers, Arthur never used profanity; he was gentle, kind and loving. I never once heard anyone say anything negative about him. He was unselfish and thought of others before himself. His family was very important to him. He was a caring, thoughtful brother and son. Arthur was never alone, always with his friends or his sisters.
           </p>
@@ -185,7 +185,7 @@ const About = () => (
             <br />
             {/* <!--<img class="img-responsive" src="http://placehold.it/750x450" alt="">--> */}
             {/* <!--Place this tag where you want the Awesome Table Widget to render --> */}
-            <div data-type="AwesomeTableView" data-viewID="-LaDfulEgcsX9Vik0Nhr" />
+            <div data-type="AwesomeTableView" data-viewid="-LaDfulEgcsX9Vik0Nhr" />
 
             {/* <!-- <img class="img-responsive" src="images/photos/2015_game/2015 All Stars_6416.JPG" alt="">--> */}
           </div>
