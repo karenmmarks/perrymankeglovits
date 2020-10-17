@@ -194,6 +194,72 @@ const About = () => (
         </div>
       </div>
 
+      <div className="row d-block">
+        <div className="box">
+          <div className="col-lg-12">
+            <hr />
+            <h2 className="intro-text text-center">
+              Tournament
+              {' '}
+              <strong>Honorees</strong>
+            </h2>
+            <hr />
+
+            <br />
+
+            <ul>
+              <h2 className="intro-text">
+                Spirit Award
+                {' '}
+                <strong>Winners</strong>
+              </h2>
+              <li>2016 John Marvin</li>
+              <li>2017 Rich Osswald</li>
+              <li>2018 Rose Haller</li>
+              <li>2019 Ken Piontkowski</li>
+            </ul>
+
+            <br />
+            <br />
+
+            <ul>
+              <h2 className="intro-text">
+                Community Inspiration
+                {' '}
+                <strong>Awards</strong>
+              </h2>
+              {/* <li> </li> */}
+            </ul>
+
+            <br />
+            <br />
+
+            <hr />
+            <h2 className="intro-text text-center">
+              Board
+              {' '}
+              <strong>of Directors</strong>
+            </h2>
+            <hr />
+
+            <ul>
+              <li>Mike Keglovits</li>
+              <li>Bryan Laverdure</li>
+              <li>Sharon Laverdure</li>
+              <li>Robert Madsen</li>
+              <li>Sal Mentesano</li>
+              <li>Brad Pensyl</li>
+              <li>Stacy Perryman</li>
+              <li>Ken Piontkowski</li>
+              <li>Bill Reese</li>
+            </ul>
+            <br />
+            <br />
+
+          </div>
+        </div>
+      </div>
+
       <div className="clearfix" />
 
     </div>

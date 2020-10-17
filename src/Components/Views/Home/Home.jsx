@@ -37,7 +37,7 @@ const Home = () => (
                 Help in the Cancer Battle!
               </h2>
 
-              <img className="img-responsive mx-auto" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
+              <img className="img-responsive mx-auto w-75" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
               <h2 className="intro-text text-center">
                 Support the Battle Against Cancer,
@@ -51,11 +51,12 @@ const Home = () => (
 
       <div className="row">
         <div className="box">
-          <div className="col-lg-12">
-            <img className="img-responsive img-border img-left" src={SPIN15} alt="" />
+          <div className="col-lg-5">
+            <img className="img-responsive float-left mr-2 mt-4" src={SPIN15} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+          </div>
+          <div className="col-lg-6 ml-2 float-left">
             <hr />
             <h2 className="intro-text text-center">
-
               Cancer
               {' '}
               <strong>Can&apos;t Stop a Legacy</strong>
@@ -83,10 +84,11 @@ const Home = () => (
               basketball stars Arthur Perryman and Al Keglovits, and all who have
               fought the battle of cancer.
             </p>
+
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row d-block">
         <div className="box">
           <div className="col-lg-12">
             <hr />
@@ -95,7 +97,7 @@ const Home = () => (
               <strong> help us make a difference</strong>
             </h2>
             <hr />
-            <img src={SPONSORS} className="img-responsive center-block" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
+            <img src={SPONSORS} className="img-responsive w-75 center-block ml-4 mt-2" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
           </div>
         </div>
       </div>
