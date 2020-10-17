@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "rm -rf ./dist && webpack --mode production && cp ./.htaccess ./dist/"
   },
   "repository": {
     "type": "git",
