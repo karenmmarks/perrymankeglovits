@@ -18,10 +18,10 @@ const App = () => (
     <Header />
     <BrowserRouter>
       <Switch>
-        <Route path="/home" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/archives" component={Archives} />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/archives" component={Archives} />
         {/* <Route path="/archives/spiritawards" component={SpiritAwards} /> */}
         {/* <Route path="/archives/photogallery" component={PhotoGallery} /> */}
         {/* <Route path="/archives/videohighlights" component={VideoHighlights} /> */}

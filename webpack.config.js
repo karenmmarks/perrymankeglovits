@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const config = {
   entry: './src/index.jsx',
@@ -10,7 +11,8 @@ const config = {
 
   devServer: {
     inline: true,
-    port: 8080,
+    historyApiFallback: true,
+    port: 4000,
   },
   resolveLoader: {
     modules: [path.join(__dirname, 'node_modules')],
@@ -36,6 +38,12 @@ const config = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+  ],
 };
 
 module.exports = config;
