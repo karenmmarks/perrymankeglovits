@@ -37,7 +37,7 @@ const Home = () => (
                 Help in the Cancer Battle!
               </h2>
 
-              <img className="img-responsive mx-auto w-75" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
+              <img className="img-responsive ml-5 w-75" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
               <h2 className="intro-text text-center">
                 Support the Battle Against Cancer,
@@ -55,12 +55,12 @@ const Home = () => (
             <img className="img-responsive float-left mr-2 mt-4" src={SPIN15} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
           <div className="col-lg-6 ml-2 float-left">
-            <hr />
+            <hr className="text-center" />
             <h2 className="intro-text text-center">
               Cancer
               {' '}
               <strong>Can&apos;t Stop a Legacy</strong>
-              <hr className="visible-xs" />
+              <hr />
             </h2>
 
             <p>
