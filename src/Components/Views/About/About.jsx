@@ -112,7 +112,7 @@ const About = () => (
             <hr />
             <h2 className="intro-text text-center">
               remembering
-              <strong>Al Keglovits</strong>
+              <strong> Al Keglovits</strong>
             </h2>
             <hr />
           </div>

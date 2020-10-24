@@ -17,14 +17,18 @@ const Header = () => {
       {modal}
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="/home" width="100px">
-          <img src={PKLogo} height="100px" alt="Perryman Keglovits Logo" className="p-1" />
-          <span className="d-flex float-right text-info font-weight-bold">
-            Perryman
-            <br />
-            & Keglovits
-            <br />
-            Foundation
-          </span>
+          <p>
+            {' '}
+            <img src={PKLogo} height="100px" alt="Perryman Keglovits Logo" className="p-1" />
+
+            <span className="d-flex float-right text-pk font-weight-bold">
+              Perryman
+              <br />
+              & Keglovits
+              <br />
+              Foundation
+            </span>
+          </p>
         </Navbar.Brand>
         <Navbar.Toggle
           className="float-right"

@@ -208,7 +208,9 @@ td {
       color: #fff;
   }
 
-
+  .ileft {
+    float:left;
+  }
 
 section {
   padding-top: 450px; 
@@ -223,6 +225,8 @@ section {
       float: left;
       margin-right: 25px;
   }
+
+  
 
   .address-bar {
       display: inherit;
@@ -282,4 +286,16 @@ section {
       display: table;
       clear: both;
   }
+  
+}
+
+@media (max-width:760px){
+  .ileft{
+    float: none;
+    width: 100%;
+    align-items: center;
+   }
+ }
+ .text-pk {
+  color: #000373;
 }

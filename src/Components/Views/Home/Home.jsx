@@ -2,7 +2,7 @@ import React from 'react';
 import ARTHOME from '../../../Assets/Images/arthome.jpg';
 import ALHOME from '../../../Assets/Images/alhome.jpg';
 import PINKJOINTHEFIGHT from '../../../Assets/Images/pinkBreastCancerJointheFight.png';
-import SPIN15 from '../../../Assets/Images/spin15.gif';
+import SPIN20 from '../../../Assets/Images/spin2020.gif';
 import SPONSORS from '../../../Assets/Images/sponsors.jpg';
 
 import './Home.css';
@@ -14,13 +14,13 @@ const Home = () => (
       <div className="row">
         <div className="box">
           <div className="col-lg-12 mx-auto">
-            <img className="img-responsive img-left" src={ARTHOME} alt="Arthur Perryman" />
+            <img className="img-responsive ileft mx-auto mt-2" src={ARTHOME} alt="Arthur Perryman" />
             <div className="col-md-5 float-left">
-              <h1 className="text-center">
+              <h1 className="text-center text-pk">
                 Perryman & Keglovits Foundation
               </h1>
 
-              <h1 className="brand-name text-center"><small>Perryman Keglovits 18th Annual Tribute Baskball Game 2020</small></h1>
+              <h1 className="brand-name text-center"><small>Perryman Keglovits 18th Annual Tribute Basketball Game 2020</small></h1>
               <br />
               <hr />
               <h2 className="intro-text text-center pb-1">
@@ -36,15 +36,33 @@ const Home = () => (
                 {' '}
                 Help in the Cancer Battle!
               </h2>
+              <hr />
+              <img className="img-responsive float-left w-50" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
-              <img className="img-responsive ml-5 w-75" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
-
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <fieldset>
+                  <div>
+                    <legend>Donate securely</legend>
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="76FEZSCQWNMQC" />
+                    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate here with PayPal - The safer, easier way to donate online!" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                    <p>via PayPal/credit card</p>
+                  </div>
+                </fieldset>
+              </form>
+              {' '}
+              <br />
+              <br />
               <h2 className="intro-text text-center">
                 Support the Battle Against Cancer,
                 <strong> Make a Donation Today</strong>
               </h2>
+              <br />
+
+              <hr />
             </div>
-            <img className="img-responsive img-right center-block" src={ALHOME} alt="Al Keglovits" />
+            <img className="img-responsive ileft center-block mt-2" src={ALHOME} alt="Al Keglovits" />
           </div>
         </div>
       </div>
@@ -52,7 +70,7 @@ const Home = () => (
       <div className="row">
         <div className="box">
           <div className="col-lg-5">
-            <img className="img-responsive float-left mr-2 mt-4" src={SPIN15} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive ileft mr-2 mt-4" src={SPIN20} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
           <div className="col-lg-6 ml-2 float-left">
             <hr className="text-center" />
@@ -69,7 +87,7 @@ const Home = () => (
             </p>
             <hr />
             <p>
-              Make a donation below to remember all those in the community who have lost
+              Make a donation above to remember all those in the community who have lost
               their battle with cancer. Encourage those who have cancer to continue their fight.
             </p>
             <hr />
