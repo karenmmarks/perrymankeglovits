@@ -213,10 +213,23 @@ const About = () => (
                 {' '}
                 <strong>Winners</strong>
               </h2>
-              <li>2016 John Marvin</li>
-              <li>2017 Rich Osswald</li>
-              <li>2018 Rose Haller</li>
               <li>2019 Ken Piontkowski</li>
+              <li>2018 Rose Haller</li>
+              <li>2017 Rich Osswald</li>
+              <li>2016 John Marvin</li>
+              <li>2015 Robert M. Masden</li>
+              <li>2014 Michael A. Stern</li>
+              <li>2013 Msgr. John A. Bergamo</li>
+              <li>2012 Bob Capasso & Dr. Bob Milvy</li>
+              <li>2011 Joe Catanzaro</li>
+              <li>2010 Bob and Pat Kennedy</li>
+              <li>2009 Ed Hagy</li>
+              <li>2008 Tom Kresge</li>
+              <li>2007 Bill Pensyl</li>
+              <li>2006 Jim Werkheiser</li>
+              <li>2005 Ed Branyan</li>
+              <li>2004 Bill and Bonnie White</li>
+              <li>2003 Pete Nevins</li>
             </ul>
 
             <br />

@@ -5,28 +5,28 @@ import './PressReleases.css';
 
 const PressReleases = () => (
   <>
-    <h1>Press Releases</h1>
+
+    <h1 className="intro-text mt-2 ml-1"><strong>Press Releases</strong></h1>
     <p className="text-left">Choose a press release from the menu below:</p>
     <Accordion defaultActiveKey="0">
 
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
-            <h3>
-              <small>
-                Pocono Record -
-                {' '}
-                <strong>Pete Nevins on Arthur Perryman</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Pocono Record -
+              {' '}
+              <strong>Pete Nevins on Arthur Perryman</strong>
+
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Pocono Record -
               <strong> Pete Nevins on Arthur Perryman</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>By Pete Nevins</p>
               <p>
@@ -63,21 +63,19 @@ const PressReleases = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            <h3>
-              <small>
-                Pocono Record -
-                {' '}
-                <strong>Pete Nevins on Al Keglovits</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Pocono Record -
+              {' '}
+              <strong>Pete Nevins on Al Keglovits</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Pocono Record -
               <strong> Pete Nevins on Al Keglovits</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>By Pete Nevins</p>
               <p>
@@ -112,21 +110,19 @@ const PressReleases = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="2">
-            <h3>
-              <small>
-                Morning Call -
-                {' '}
-                <strong>Cancer Stole His Life... By Andre Williams</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Morning Call -
+              {' '}
+              <strong>Cancer Stole His Life... By Andre Williams</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Morning Call -
               <strong> Cancer Stole His Life, But Could Not Take Perryman's Legacy</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>By Andre Williams</p>
               <p>
@@ -158,21 +154,19 @@ const PressReleases = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="3">
-            <h3>
-              <small>
-                Pocono Record -
-                {' '}
-                <strong>The Debut of Coach Kroeckel</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Pocono Record -
+              {' '}
+              <strong>The Debut of Coach Kroeckel</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="3">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Pocono Record -
               <strong> The Debut of Coach Kroeckel</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>March 27, 2007</p>
               <p>Pocono Record sports writer Andrew Kroeckel made his coaching debut Monday, watching his Keglovits girls team fall to Team Perryman 71-66 in the Fifth Annual Perryman & Keglovits All-Star game. The games, which are held in honor of Art Perryman and Al Keglovits and benefits cancer research, were played at East Stroudsburg University and featured the area's senior boys and girls.</p>
@@ -280,21 +274,19 @@ const PressReleases = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="4">
-            <h3>
-              <small>
-                Pocono Record -
-                {' '}
-                <strong>A Night To Remember By Joe Petrucci</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Pocono Record -
+              {' '}
+              <strong>A Night To Remember By Joe Petrucci</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="4">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Pocono Record -
               <strong> A Night To Remember By Joe Petrucci</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>By Joe Petrucci</p>
               <p>Bill Pensyl has already been inducted into enough Halls of Fame.</p>
@@ -398,46 +390,34 @@ const PressReleases = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="5">
-            <h3>
-              <small>
-                Morning Call -
-                {' '}
-                <strong>Pensyl Honored With 'Spirit' Award By Keith Groiler</strong>
-              </small>
-            </h3>
+            <h2 className="intro-text text-left">
+              Morning Call -
+              {' '}
+              <strong>Pensyl Honored With 'Spirit' Award By Keith Groiler</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="5">
           <Card.Body>
-            <h2 className="intro-text text-left">
+            <h3 className="intro-text text-left">
               Morning Call -
               <strong> Pensyl Honored With 'Spirit' Award By Keith Groiler</strong>
-            </h2>
+            </h3>
             <div className="text-left">
               <p>
                 <strong>By Keith Groiler </strong>
                 {' '}
                 March 27, 2007
               </p>
-              <p> Two fast-paced, high-flying all-star basketball games were played inside East Stroudsburg University's Koehler Fieldhouse on Monday night.</p>
-              <p>But the true meaning of the night took center stage along with Bill Pensyl during a between-game ceremony.</p>
-              <p>Pensyl, the legendary Bangor coach, received the Perryman-Keglovits Classic's ''Spirit of Basketball'' award.</p>
-              <p>He received a huge ovation from the crowd of 1,200 and talked about the need to continue the fight against cancer.</p>
-              <p>Cancer took the life of Arthur Perryman while he was a teenager and less than one year removed from leading East Stroudsburg to the District 11 4A title in 1994.</p>
-              <p>It also took the life of Al Keglovits, a former high school and college assistant coach, while he was in the prime of his life.</p>
-              <p>That's why proceeds from the event benefit the Jimmy V Foundation and the nearby Dale and Frances Hughes Cancer Center.</p>
-              <p>Pensyl, himself, is battling cancer, but looks fit and is feeling good.</p>
-              <p>''I coached against both Al and Arthur, so it's special,'' the 69-year-old East Stroudsburg High graduate said. ''It's a wonderful event. I'm just getting over a round of 25 radiation treatments and this kind of thing really helps your spirits. My prognosis is good.''</p>
-              <p>In fact, Pensyl hopes to umpire his first baseball game of the season next week.</p>
-              <p>But basketball was still front and center as the best senior players from the Mountain Valley Conference and Notre Dame of East Stroudsburg showcased their skills one more time.</p>
-              <p>The event is now five years old and began when the Lehigh Valley-based Via All-Star Classic no longer included players from the Poconos.</p>
-              <p>This year, the Via is welcoming back Notre Dame and MVC players, but the Perryman/Keglovits event has carved out its own niche in the Monroe County area.</p>
-              <p>''It gets bigger and better every year,'' said Stroudsburg coach Shawn Thornton, who was in the stands with a cane after undergoing recent knee replacement surgery.</p>
-              <p>''I love the way they honor people and Bill being here and talking about being a cancer survivor really brings home what it's all about. I'm ecstatic that Via is including our players again, but this event will continue, too, and it gives us the best of both worlds.''</p>
-              <p>Bryan Laverdure, who has taken over for his father, Rich, in helping to coordinate the event, believes there's plenty of good causes to go around.</p>
-              <p>''I would love to work even more with Via,'' Laverdure, a former East Stroudsburg player, said. ''Both events are for the the community and for great causes. Our games gives these kids one more game. I know I wish I had one more game to play.''</p>
-              <p>As for the games that were played, the Perryman all-stars won the girls game 71-66 as Pleasant Valley's Rebecca Fretz scored 18 points and Pocono West's Adrianna Johnson added 13.</p>
-              <p>The Keglovits team won the boys game 80-74 as Pocono West's Romond Vines put on a 23-point show.</p>
+              <p> Two fast-paced, high-flying all-star basketball games were played inside East Stroudsburg University's Koehler Fieldhouse on Monday night. But the true meaning of the night took center stage along with Bill Pensyl during a between-game ceremony. Pensyl, the legendary Bangor coach, received the Perryman-Keglovits Classic's "Spirit of Basketball" award. He received a huge ovation from the crowd of 1,200 and talked about the need to continue the fight against cancer.</p>
+              <p>Cancer took the life of Arthur Perryman while he was a teenager and less than one year removed from leading East Stroudsburg to the District 11 4A title in 1994. It also took the life of Al Keglovits, a former high school and college assistant coach, while he was in the prime of his life.</p>
+              <p>That's why proceeds from the event benefit the Jimmy V Foundation and the nearby Dale and Frances Hughes Cancer Center. Pensyl, himself, is battling cancer, but looks fit and is feeling good.</p>
+              <p>"I coached against both Al and Arthur, so it's special," the 69-year-old East Stroudsburg High graduate said. "It's a wonderful event. I'm just getting over a round of 25 radiation treatments and this kind of thing really helps your spirits. My prognosis is good." </p>
+              <p>In fact, Pensyl hopes to umpire his first baseball game of the season next week. But basketball was still front and center as the best senior players from the Mountain Valley Conference and Notre Dame of East Stroudsburg showcased their skills one more time.</p>
+              <p>The event is now five years old and began when the Lehigh Valley-based Via All-Star Classic no longer included players from the Poconos. This year, the Via is welcoming back Notre Dame and MVC players, but the Perryman/Keglovits event has carved out its own niche in the Monroe County area.</p>
+              <p>"It gets bigger and better every year," said Stroudsburg coach Shawn Thornton, who was in the stands with a cane after undergoing recent knee replacement surgery. "I love the way they honor people and Bill being here and talking about being a cancer survivor really brings home what it's all about. I'm ecstatic that Via is including our players again, but this event will continue, too, and it gives us the best of both worlds." </p>
+              <p>Bryan Laverdure, who has taken over for his father, Rich, in helping to coordinate the event, believes there's plenty of good causes to go around. "I would love to work even more with Via," Laverdure, a former East Stroudsburg player, said. "Both events are for the the community and for great causes. Our games gives these kids one more game. I know I wish I had one more game to play."</p>
+              <p>As for the games that were played, the Perryman all-stars won the girls game 71-66 as Pleasant Valley's Rebecca Fretz scored 18 points and Pocono West's Adrianna Johnson added 13. The Keglovits team won the boys game 80-74 as Pocono West's Romond Vines put on a 23-point show.</p>
             </div>
           </Card.Body>
         </Accordion.Collapse>

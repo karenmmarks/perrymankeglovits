@@ -4,7 +4,8 @@ import './PhotoGallery.css';
 
 const PhotoGallery = () => (
   <>
-    <h1>Photo Gallery</h1>
+    <h1 className="intro-text mt-2 ml-1"><strong>Photo Gallery</strong></h1>
+    <p className="text-left">Choose a Photo Gallery Year from the menu below:</p>
     <Accordion defaultActiveKey="0">
 
       <Card>

@@ -4,7 +4,8 @@ import './SpiritAwards.css';
 
 const SpiritAwards = () => (
   <>
-    <h1>Spirit Awards</h1>
+    <h1 className="intro-text mt-2 ml-1"><strong>Spirit Awards</strong></h1>
+    <p className="text-left">Choose a Spirit Award Winner from the menu below:</p>
     <Accordion defaultActiveKey="0">
       <Card>
         <Card.Header>
@@ -12,7 +13,7 @@ const SpiritAwards = () => (
             <h2 className="intro-text text-left">
               2019 -
               {' '}
-              <strong>Ken Piontkowski</strong>
+              <strong> Ken Piontkowski</strong>
             </h2>
           </Accordion.Toggle>
         </Card.Header>
@@ -59,12 +60,49 @@ const SpiritAwards = () => (
             <h2 className="intro-text text-left">
               2018 -
               {' '}
-              <strong> Spirit Award Winner</strong>
+              <strong> ROSE HALLER</strong>
             </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
-          <Card.Body> Hello! I'm another body</Card.Body>
+          <Card.Body>
+            {' '}
+            <p>
+              A veteran coach with plenty of experience, Rose Haller was named the head coach of the Centenary University women’s basketball team before the start of the 2016-17 season.
+            </p>
+            <p>
+              During the 2017-18 season, Haller guided the Cyclones to their second straight appearance in the Colonial States Athletic Conference (CSAC) playoffs. Under her watch, senior Nicole Cartaino earned Second Team All-CSAC honors while fellow senior Rachel Edwards became the ninth player in program history to reach the 1,000 career point plateau.
+            </p>
+
+            <p>
+              During her first season on the Cyclones’ bench, Haller led Centenary to a 20-7 overall mark. The Cyclones advanced to the CSAC playoffs and made an appearance in the East Coast Athletic Conference (ECAC) Tournament. Haller mentored Mallory George, who became the program’s all-time leading scorer with 1,549 career points. George also became the first player in program history to record over 1,000 career points and 1,000 career rebounds.
+            </p>
+            <p>
+              After leading Centenary to the second best season in program history, Haller was named the 2016-17 Centenary University Coach of the Year.
+
+            </p>
+            <p>
+              In addition to her duties as the women’s basketball coach, Haller serves as the scheduling coordinator, officials coordinator and meals/transportation coordinator for the Cyclones.
+            </p>
+            <p>
+              Haller came to Centenary after spending seven seasons as the head coach at East Stroudsburg University. While at East Stroudsburg, she led the Warriors to three straight Pennsylvania State Athletic Conference (PSAC) East Championships. Haller and the Warriors won the PSAC Tournament Championship in 1994 and advanced to the NCAA Tournament in 1993 and 1994. She was named the PSAC Coach of the Year in 1993 and 1994 and in also was named the Division II, District II College Coach of the Year in 1994.
+            </p>
+            <p>
+              At East Stroudsburg, Haller was responsible for managing all aspects of the program, including academics, recruiting, the budget, scouting, fundraising and more. In addition to her basketball duties, Haller helped plan and run summer basketball camps, established a camp sponsorship program for underprivileged youth. She was the athletic department’s representative for freshman orientation among other programs.
+            </p>
+            <p>
+              In addition to her collegiate coaching experience, Haller has plenty of high school coaching experience. She was head coach at East Stroudsburg High School from 1987-1991 and after her time at East Stroudsburg University, she served first as the head coach at Pocono Mountain West High School and then at Pocono Mountain East High School. Haller was responsible for starting the Pocono Mountain West program after the inception of the new school in 2002. She won multiple league championships and qualified for districts several times.
+            </p>
+            <p>
+              Haller was a talented point guard during her collegiate playing career at East Stroudsburg University. She scored 1,050 career points and dished out 365 career assists for the Warriors. Haller led East Stroudsburg to the PSAC Eastern Championship in 1985. Her 410 points rank 18th in single-season school history while her 147 assists during the 1984-85 season still ranks fourth in single-season history. Both of those numbers set a school record when she originally did it. She was named the team MVP twice and was the Female Athlete of the Year in 1985.
+            </p>
+            <p>
+              Haller earned her bachelor’s in movement and sports studies and her masters in education/sport management from East Stroudsburg.
+            </p>
+            <p>
+              Haller has been inducted into the Lebanon Catholic Hall of Fame, the East Stroudsburg University Hall of Fame and the Lebanon County Hall of Fame for both her time as a player and a coach.
+            </p>
+          </Card.Body>
         </Accordion.Collapse>
       </Card>
 
@@ -74,7 +112,7 @@ const SpiritAwards = () => (
             <h2 className="intro-text text-left">
               2017 -
               {' '}
-              <strong>Spirit Award Winner</strong>
+              <strong> Spirit Award Winner</strong>
             </h2>
           </Accordion.Toggle>
         </Card.Header>
@@ -104,7 +142,7 @@ const SpiritAwards = () => (
             <h2 className="intro-text text-left">
               2015 -
               {' '}
-              <strong>Robert M. Madsen</strong>
+              <strong> Robert M. Madsen</strong>
             </h2>
           </Accordion.Toggle>
         </Card.Header>
@@ -112,7 +150,7 @@ const SpiritAwards = () => (
           <Card.Body>
             <div className="text-left">
               <p>
-                Bob gained his love and knowledge for the game of basketball at an extremely early age. When he was six, he and his brothers could always be found at the Wall High School in New Jersey practices and games.
+                Robert Madsen gained his love and knowledge for the game of basketball at an extremely early age. When he was six, he and his brothers could always be found at the Wall High School in New Jersey practices and games.
               </p>
               <p>
                 At the age of eight, Robert Kennedy gave all
@@ -197,7 +235,11 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="7">
-            2012 - Bob Capasso & Dr. Bob Milvy
+            <h2 className="intro-text text-left">
+              2012 -
+              {' '}
+              <strong> Bob Capasso & Dr. Bob Milvy</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="7">
@@ -208,7 +250,11 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="8">
-            2011 - Joseph Catanzaro
+            <h2 className="intro-text text-left">
+              2011 -
+              {' '}
+              <strong> Joseph Catanzaro</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="8">
@@ -219,7 +265,11 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="9">
-            2010 - Bob and Patty Kennedy
+            <h2 className="intro-text text-left">
+              2010 -
+              {' '}
+              <strong> Bob and Patty Kennedy</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="9">
@@ -230,7 +280,11 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="10">
-            2009 - Ed Hagy
+            <h2 className="intro-text text-left">
+              2009 -
+              {' '}
+              <strong> Ed Hagy</strong>
+            </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="10">
@@ -241,7 +295,11 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="11">
-            2008 - Tom Kresge
+          <h2 className="intro-text text-left">
+              2008 -
+              {' '}
+              <strong> Tom Kresgestrong></strong>
+              </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="11">
@@ -252,7 +310,10 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="12">
-            2007 - Bill Pensyl
+          <h2 className="intro-text text-left">
+              2007 -
+              {' '}<strong> Bill Pensyl</strong>
+              </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="12">
@@ -263,7 +324,10 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="13">
-            2006 - Jim Werkheiser
+          <h2 className="intro-text text-left">
+              2006 -
+              {' '}<strong> Jim Werkheiser</strong>
+              </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="13">
@@ -274,7 +338,10 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="14">
-            2005 - Ed Branyan
+          <h2 className="intro-text text-left">
+              2005 -
+              {' '}<strong> Ed Branyan</strong>
+              </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="14">
@@ -285,7 +352,10 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="15">
-            2004 - Bill White
+          <h2 className="intro-text text-left">
+              2004 -
+              {' '}<strong> Bill White</strong>
+              </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="15">
@@ -296,11 +366,33 @@ const SpiritAwards = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="16">
-            2003 - Pete Nevins
+          <h2 className="intro-text text-left">
+              2003 -
+              {' '}<strong> Pete Nevins</strong>
+          </h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="16">
-          <Card.Body>Hello! I'm another body</Card.Body>
+          <Card.Body>
+            <h1 className="title">Pete Nevins</h1>
+            <p>Former Sports Information Director: East Stroudsburg University, University of Miami `60 - Pete Nevins was one of the nation's most highly respected sports information directors.</p>
+            <p>
+              He is a member of the College Sports Information Directors (CoSIDA) Hall of Fame and has received the Warren Berg Award as the outstanding college SID in the nation. He also was honored with a lifetime achievement award from CoSIDA last year.
+            </p>
+            <p>
+              He worked eight years as a sports-writer in Bridgeport, Connecticut and five and a half years as the SID at the University of Bridgeport before coming to ESU in March 1969. In addition to handling public relations, Nevins ran special events for the athletic department, including the Athletic Hall of Fame Banquet and the Athletic Awards Banquet.
+            </p>
+            <p>
+              He taught graduate courses in Public Relations in Sport Management.
+              Nevins received a bachelor's degree in Business Administration from the University of Miami in 1960 and a master's degree in Health and Physical Education from East Stroudsburg in 1984.
+            </p>
+            <p>
+              He currently writes the College Corner column and features for The Pocono Record. Nevins has been married for 41 years and he and his wife, Gail, have two sons, Douglas, now living in West Chester, Pa. and Daniel, Wayne, Pa. and four grandchildren.
+            </p>
+            <p>
+              Please Note: We lost Peter to cancer in on January 6, 2007
+            </p>
+          </Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>
