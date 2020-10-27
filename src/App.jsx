@@ -6,12 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header/Header.jsx';
 import Home from './Components/Views/Home/Home.jsx';
 import About from './Components/Views/About/About.jsx';
-import Contact from './Components/Views/Contact/Contact.jsx';
 import Archives from './Components/Views/Archives/Archives.jsx';
-// import PressReleases from './Components/Views/Archives/PressReleases';
-// import SpiritAwards from './Components/Views/Archives/SpiritAwards';
-// import PhotoGallery from './Components/Views/Archives/PhotoGallery';
-// import VideoHighlights from './Components/Views/Archives/VideoHighlights';
+import Donate from './Components/Views/Donate/Donate.jsx';
 
 const App = () => (
   <>
@@ -25,11 +21,8 @@ const App = () => (
         />
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
         <Route path="/archives" component={Archives} />
-        {/* <Route path="/archives/spiritawards" component={SpiritAwards} /> */}
-        {/* <Route path="/archives/photogallery" component={PhotoGallery} /> */}
-        {/* <Route path="/archives/videohighlights" component={VideoHighlights} /> */}
+        <Route path="/donate" component={Donate} />
       </Switch>
     </BrowserRouter>
 

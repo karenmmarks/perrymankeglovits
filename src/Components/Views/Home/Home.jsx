@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import ARTHOME from '../../../Assets/Images/arthome.jpg';
 import ALHOME from '../../../Assets/Images/alhome.jpg';
 import PINKJOINTHEFIGHT from '../../../Assets/Images/pinkBreastCancerJointheFight.png';
@@ -39,18 +40,10 @@ const Home = () => (
               <hr />
               <img className="img-responsive float-left w-50" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
-              <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <fieldset>
-                  <div>
-                    <legend>Donate securely</legend>
-                    <input type="hidden" name="cmd" value="_s-xclick" />
-                    <input type="hidden" name="hosted_button_id" value="76FEZSCQWNMQC" />
-                    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="Donate here with PayPal - The safer, easier way to donate online!" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                    <p>via PayPal/credit card</p>
-                  </div>
-                </fieldset>
-              </form>
+              <Button variant="warning" onClick={() => alert('We are sending you over to PayPal now')} href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD">
+                Donate via PayPal
+              </Button>
+
               {' '}
               <br />
               <br />
