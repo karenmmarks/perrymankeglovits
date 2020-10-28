@@ -1,9 +1,11 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
-  Card, ListGroup, Row, Col,
+  Alert, Button, Card, Col, ListGroup, Row, Container,
 } from 'react-bootstrap';
 
-const Donate = () => {
+const Donate = ({ alert, setAlert, handleClose }) => {
   const content = [
     {
       key: 'team-player',
@@ -56,6 +58,27 @@ const Donate = () => {
     },
   ];
 
+  const paypalAlert = () => {
+    setAlert(
+      <Alert variant="dark">
+        <Row>
+          <Col sm={12} md={8}>
+            <Alert.Heading>We are heading over to PayPal now</Alert.Heading>
+          </Col>
+          <Col sm={12} md={4}>
+            <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD" variant="outline-info">
+              Continue to PayPal
+            </Button>
+            {' '}
+            <Button onClick={() => handleClose()} variant="outline-danger">
+              No take me back!
+            </Button>
+          </Col>
+        </Row>
+      </Alert>,
+    );
+  };
+
   return (
     <>
       <br />
@@ -63,39 +86,101 @@ const Donate = () => {
         <Row>
           <Col sm={12}>
             <div className="box">
-              <h2>Partnership Options</h2>
-              <br />
-              {content.map((sponser) => {
-                const {
-                  key, title, price, features,
-                } = sponser;
-                return (
-                  <>
+              {alert}
+              <Card>
+                <Card.Header as="h2">Personal Contributions</Card.Header>
+                <Card.Body>
+                  <Card.Text>
+                    If you or your business would like to be a part of our game program,
+                    please make a donation in one of the below amounts, and under &quot;Add
+                    special instructions to the seller&quot; mention the package you&apos;ve
+                    selected. We will be in touch to the email address you provide.
+                  </Card.Text>
+                  <Card.Text>
+                    We are happy to accept contributions of any amount. If you would like to
+                    donate, please send a check payable to
+                    {' '}
+                    <b>Perryman & Keglovits Foundation</b>
+                    {' '}
+                    at the following address:
+                  </Card.Text>
+                  <Card.Text>
+                    Perryman & Keglovits Foundation
                     <br />
-                    <Card key={key}>
-                      <Card.Header as="h3">{`${title} - ${price}`}</Card.Header>
-                      <Card.Body>
-                        <ListGroup variant="flush">
-                          {features.map((feature) => (
-                            <ListGroup.Item>
-                              {feature}
-                            </ListGroup.Item>
-                          ))}
-                        </ListGroup>
-                      </Card.Body>
-                    </Card>
-                  </>
-                );
-              })}
-              <p>
-                Deadline: March 1st, 2019
-              </p>
+                    PO Box 274
+                    <br />
+                    East Stroudsburg, PA 18301
+                  </Card.Text>
+                  <Card.Text>
+                    Or, you can donate via a Paypal account or major credit card
+                  </Card.Text>
+                  <Button variant="info" onClick={() => paypalAlert()}>
+                    Donate here
+                  </Button>
+                </Card.Body>
+              </Card>
+            </div>
+          </Col>
+        </Row>
+      </div>
+      <div className="container fluid">
+        <Row>
+          <Col>
+            <div className="box">
+
+              <Card>
+                <Card.Header as="h2">Partnership Options</Card.Header>
+                <Card.Body>
+                  <Container>
+                    {content.map((sponser) => {
+                      const {
+                        key, title, price, features,
+                      } = sponser;
+                      return (
+                        <>
+                          <Row key={key}>
+                            <Col>
+                              <Card>
+                                <Card.Header as="h3">{`${title} - ${price}`}</Card.Header>
+                                <Card.Body>
+                                  <Row>
+                                    <Col>
+                                      <ListGroup variant="flush">
+                                        {features.map((feature) => (
+                                          <ListGroup.Item>
+                                            {feature}
+                                          </ListGroup.Item>
+                                        ))}
+                                      </ListGroup>
+                                    </Col>
+                                  </Row>
+                                </Card.Body>
+                              </Card>
+                            </Col>
+                          </Row>
+                          <br />
+                          <br />
+                        </>
+                      );
+                    })}
+                  </Container>
+                </Card.Body>
+                <Card.Footer>
+                  Deadline: March 1st, 2019
+                </Card.Footer>
+              </Card>
             </div>
           </Col>
         </Row>
       </div>
     </>
   );
+};
+
+Donate.propTypes = {
+  alert: PropTypes.object.isRequired,
+  setAlert: PropTypes.func.isRequired,
+  handleClose: PropTypes.func.isRequired,
 };
 
 export default Donate;
