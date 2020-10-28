@@ -6,12 +6,12 @@ const PhotoGallery = () => (
   <>
     <h1 className="intro-text mt-2 ml-1"><strong>Photo Gallery</strong></h1>
     <p className="text-left">Choose a Photo Gallery Year from the menu below:</p>
-    <Accordion defaultActiveKey="0">
+    <Accordion>
 
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
-            2019 Perryman & Keglovits All-Star Game
+            <h2 className="intro-text text-Center">2019</h2>
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
@@ -22,7 +22,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            2018 Perryman & Keglovits All-Star Game
+            2018
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
@@ -33,7 +33,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="2">
-            2017 Perryman & Keglovits All-Star Game
+            2017
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="2">
@@ -44,7 +44,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="3">
-            2016 Perryman & Keglovits All-Star Game
+            2016
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="3">
@@ -55,7 +55,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="4">
-            2015 Perryman & Keglovits All-Star Game
+            2015
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="4">
@@ -66,7 +66,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="5">
-            2014 Perryman & Keglovits All-Star Game
+            2014
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="5">
@@ -77,7 +77,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="6">
-            2013 Perryman & Keglovits All-Star Game
+            2013
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="6">
@@ -88,7 +88,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="7">
-            2012 Perryman & Keglovits All-Star Game
+            2012
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="7">
@@ -99,7 +99,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="8">
-            2011 Perryman & Keglovits All-Star Game
+            2011
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="8">
@@ -110,7 +110,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="9">
-            2010 Perryman & Keglovits All-Star Game
+            2010
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="9">
@@ -121,7 +121,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="10">
-            2009 Perryman & Keglovits All-Star Game
+            2009
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="10">
@@ -132,7 +132,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="11">
-            2008 Perryman & Keglovits All-Star Game
+            2008
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="11">
@@ -143,7 +143,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="12">
-            2007 Perryman & Keglovits All-Star Game
+            2007
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="12">
@@ -154,7 +154,7 @@ const PhotoGallery = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="13">
-            2006 Perryman & Keglovits All-Star Game
+            2006
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="13">

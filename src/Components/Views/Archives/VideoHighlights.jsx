@@ -6,7 +6,7 @@ const VideoHighlights = () => (
   <>
     <h1 className="intro-text mt-2 ml-1"><strong>Video Highlights</strong></h1>
     <p className="text-left">Choose a Video Highlight from the menu below:</p>
-    <Accordion defaultActiveKey="0">
+    <Accordion>
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
