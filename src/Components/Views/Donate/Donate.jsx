@@ -2,10 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Alert, Button, Card, Col, ListGroup, Row, Container,
+  Button, Card, Col, ListGroup, Row, Container,
 } from 'react-bootstrap';
 
-const Donate = ({ alert, setAlert, handleClose }) => {
+const Donate = ({ alert, paypalAlert }) => {
   const content = [
     {
       key: 'team-player',
@@ -57,27 +57,6 @@ const Donate = ({ alert, setAlert, handleClose }) => {
       ],
     },
   ];
-
-  const paypalAlert = () => {
-    setAlert(
-      <Alert variant="dark">
-        <Row>
-          <Col sm={12} md={8}>
-            <Alert.Heading>We are heading over to PayPal now</Alert.Heading>
-          </Col>
-          <Col sm={12} md={4}>
-            <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD" variant="outline-info">
-              Continue to PayPal
-            </Button>
-            {' '}
-            <Button onClick={() => handleClose()} variant="outline-danger">
-              No take me back!
-            </Button>
-          </Col>
-        </Row>
-      </Alert>,
-    );
-  };
 
   return (
     <>
@@ -179,8 +158,7 @@ const Donate = ({ alert, setAlert, handleClose }) => {
 
 Donate.propTypes = {
   alert: PropTypes.object.isRequired,
-  setAlert: PropTypes.func.isRequired,
-  handleClose: PropTypes.func.isRequired,
+  paypalAlert: PropTypes.func.isRequired,
 };
 
 export default Donate;
