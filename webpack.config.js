@@ -1,4 +1,5 @@
 const path = require('path');
+const express = require('express');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 const config = {

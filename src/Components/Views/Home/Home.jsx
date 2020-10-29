@@ -1,21 +1,20 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import ARTHOME from '../../../Assets/Images/arthome.jpg';
-import ALHOME from '../../../Assets/Images/alhome.jpg';
-import PINKJOINTHEFIGHT from '../../../Assets/Images/pinkBreastCancerJointheFight.png';
-import SPIN20 from '../../../Assets/Images/spin2020.gif';
-import SPONSORS from '../../../Assets/Images/sponsors.jpg';
+import PropTypes from 'prop-types';
+import IMAGES from '../../../Assets/Images/images.js';
 
 import './Home.css';
 
-const Home = () => (
+const Home = ({ alert, paypalAlert }) => (
   <>
     <br />
     <div className="container fluid">
       <div className="row">
         <div className="box">
+          {alert}
           <div className="col-lg-12 mx-auto">
-            <img className="img-responsive ileft mx-auto mt-2" src={ARTHOME} alt="Arthur Perryman" />
+            <img className="img-responsive ileft mx-auto mt-2" src={IMAGES.ARTHOME} alt="Arthur Perryman" />
             <div className="col-md-5 float-left">
               <h1 className="text-center text-pk">
                 Perryman & Keglovits Foundation
@@ -38,9 +37,9 @@ const Home = () => (
                 Help in the Cancer Battle!
               </h2>
               <hr />
-              <img className="img-responsive float-left w-50" src={PINKJOINTHEFIGHT} alt="Pink Breast Cancer Ribbon Join the Fight" />
+              <img className="img-responsive float-left w-50" src={IMAGES.BREAST_CANCER} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
-              <Button variant="warning" onClick={() => alert('We are sending you over to PayPal now')} href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD">
+              <Button variant="warning" onClick={() => paypalAlert()}>
                 Donate via PayPal
               </Button>
 
@@ -55,7 +54,7 @@ const Home = () => (
 
               <hr />
             </div>
-            <img className="img-responsive ileft center-block mt-2" src={ALHOME} alt="Al Keglovits" />
+            <img className="img-responsive ileft center-block mt-2" src={IMAGES.ALHOME} alt="Al Keglovits" />
           </div>
         </div>
       </div>
@@ -63,7 +62,7 @@ const Home = () => (
       <div className="row">
         <div className="box">
           <div className="col-lg-5">
-            <img className="img-responsive ileft mr-2 mt-4" src={SPIN20} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive ileft mr-2 mt-4" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
           <div className="col-lg-6 ml-2 float-left">
             <hr className="text-center" />
@@ -108,7 +107,7 @@ const Home = () => (
               <strong> help us make a difference</strong>
             </h2>
             <hr />
-            <img src={SPONSORS} className="img-responsive w-75 center-block ml-4 mt-2" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
+            <img src={IMAGES.SPONSORS} className="img-responsive w-75 center-block ml-4 mt-2" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
           </div>
         </div>
       </div>
@@ -150,7 +149,11 @@ const Home = () => (
 
     </div>
   </>
-
 );
+
+Home.propTypes = {
+  alert: PropTypes.object.isRequired,
+  paypalAlert: PropTypes.func.isRequired,
+};
 
 export default Home;
