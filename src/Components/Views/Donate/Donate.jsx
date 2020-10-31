@@ -61,7 +61,7 @@ const Donate = ({ alert, paypalAlert }) => {
   return (
     <>
       <br />
-      <div className="container fluid">
+      <div className="container-fluid">
         <Row>
           <Col sm={12}>
             <div className="box">

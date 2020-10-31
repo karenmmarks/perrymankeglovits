@@ -13,7 +13,7 @@ const Archives = () => {
   return (
     <>
       <br />
-      <div className="container page">
+      <div className="container-fluid">
         <div className="row">
           <div className="box">
             <div className="col-lg-12 mx-auto">
