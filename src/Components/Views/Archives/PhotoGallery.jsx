@@ -1,10 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import './PhotoGallery.css';
 
-const PhotoGallery = () => (
-  <>
-    <h1 className="intro-text mt-2 ml-1"><strong>Photo Gallery</strong></h1>
+const BASE_URL = 'http://50.29.151.120:8000';
+
+const PhotoGallery = () => {
+  const [loading, setLoading] = useState(true);
+  const [imageLinks, setImageLinks] = useState({});
+
+  if (loading) {
+    fetch(`${BASE_URL}/imageLinks`)
+      .then((res) => res.json())
+      .then((res) => {
+        setImageLinks(res);
+        setLoading(false);
+      });
+  }
+
+  return (
+    <>
+      <br />
+      <div className="container page">
+        <div className="row">
+          <div className="box">
+            <div className="col-lg-12 mx-auto">
+              <p className="text-left">Choose a Photo Gallery Year from the menu below:</p>
+              <Accordion>
+                {Object.keys(imageLinks).sort().map((year) => (
+                  <>
+                    <Card>
+                      <Card.Header>
+                        <Accordion.Toggle as={Button} variant="link" eventKey={year}>
+                          <h2 className="intro-text text-left">
+                            {year}
+                          </h2>
+                        </Accordion.Toggle>
+                      </Card.Header>
+                      <Accordion.Collapse eventKey={year}>
+                        <Card.Body>
+                          <div className="text-left">
+                            {imageLinks[year].map(({ image, thumb }) => (
+                              <img key={thumb} alt={thumb} src={`${BASE_URL}${thumb}`} className="img-responsive mt-2 mx-1 mb-2" />
+
+                            ))}
+                          </div>
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+
+                  </>
+                ))}
+                {/* <h1 className="intro-text mt-2 ml-1"><strong>Photo Gallery</strong></h1>
     <p className="text-left">Choose a Photo Gallery Year from the menu below:</p>
     <Accordion>
 
@@ -162,10 +208,14 @@ const PhotoGallery = () => (
         </Accordion.Collapse>
       </Card>
 
-    </Accordion>
-
-  </>
-
-);
+    </Accordion> */}
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default PhotoGallery;
