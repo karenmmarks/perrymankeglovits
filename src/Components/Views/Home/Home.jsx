@@ -9,7 +9,7 @@ import './Home.css';
 const Home = ({ alert, paypalAlert }) => (
   <>
     <br />
-    <div className="container-fluid">
+    <div className="container page">
       <div className="row">
         <div className="box">
           {alert}
