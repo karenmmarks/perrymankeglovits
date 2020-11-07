@@ -3,6 +3,8 @@ import ALHOME from './alhome.jpg';
 import ART from './art.jpg';
 import ARTHOME from './arthome.jpg';
 import BG from './bg.jpg';
+import BLOCK from './block.jpg';
+import CHARGE from './charge.jpg';
 import HOME_COLLAGE from './home_collage.jpg';
 import HOME_COLLAGE2 from './home_collage2.jpg';
 import BREAST_CANCER from './pinkBreastCancerJoinTheFight.png';
@@ -17,6 +19,8 @@ const IMAGES = {
   ART,
   ARTHOME,
   BG,
+  BLOCK,
+  CHARGE,
   HOME_COLLAGE,
   HOME_COLLAGE2,
   BREAST_CANCER,
