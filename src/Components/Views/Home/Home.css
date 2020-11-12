@@ -209,7 +209,11 @@ td {
   }
 
   .ileft {
-    float:left;
+    float: left;
+  }
+
+  .iright {
+    float: right;
   }
 
 section {
@@ -291,6 +295,11 @@ section {
 
 @media (max-width:760px){
   .ileft{
+    float: none;
+    width: 100%;
+    align-items: center;
+   }
+   .iright{
     float: none;
     width: 100%;
     align-items: center;

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Accordion, Card, Button } from 'react-bootstrap';
+import Gallery from 'react-photo-gallery';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 import './PhotoGallery.css';
 
 const BASE_URL = 'http://50.29.151.120:8000';
@@ -7,6 +9,13 @@ const BASE_URL = 'http://50.29.151.120:8000';
 const PhotoGallery = () => {
   const [loading, setLoading] = useState(true);
   const [imageLinks, setImageLinks] = useState({});
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const openModal = (_, { index }) => {
+    setModalIsOpen(true);
+    setCurrentImage(index);
+  };
 
   if (loading) {
     fetch(`${BASE_URL}/imageLinks`)
@@ -39,10 +48,31 @@ const PhotoGallery = () => {
                       <Accordion.Collapse eventKey={year}>
                         <Card.Body>
                           <div className="text-left">
-                            {imageLinks[year].map(({ image, thumb }) => (
-                              <img key={thumb} alt={thumb} src={`${BASE_URL}${thumb}`} className="img-responsive mt-2 mx-1 mb-2" />
-
-                            ))}
+                            <Gallery
+                              photos={imageLinks[year].map(({ thumb }) => ({
+                                src: `${BASE_URL}${thumb}`,
+                                sizes: ['(min-width: 480px) 50vw,(min-width: 1024px) 33.3vw,100vw'],
+                              }))}
+                              onClick={openModal}
+                            />
+                            <ModalGateway>
+                              {modalIsOpen && (
+                                <Modal onClose={() => {
+                                  setModalIsOpen(false);
+                                  setCurrentImage(0);
+                                }}
+                                >
+                                  <Carousel
+                                    currentIndex={currentImage}
+                                    views={
+                                    imageLinks[year].map(({ image }) => ({
+                                      source: `${BASE_URL}${image}`,
+                                    }))
+                                  }
+                                  />
+                                </Modal>
+                              )}
+                            </ModalGateway>
                           </div>
                         </Card.Body>
                       </Accordion.Collapse>
