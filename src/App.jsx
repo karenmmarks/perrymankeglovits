@@ -11,6 +11,7 @@ import Home from './Components/Views/Home/Home.jsx';
 import About from './Components/Views/About/About.jsx';
 import Archives from './Components/Views/Archives/Archives.jsx';
 import Donate from './Components/Views/Donate/Donate.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 const App = () => {
   const [alert, setAlert] = useState();
@@ -56,6 +57,7 @@ const App = () => {
           </Route>
         </Switch>
       </BrowserRouter>
+      <Footer />
     </>
   );
 };
