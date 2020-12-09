@@ -65,7 +65,7 @@ const Home = ({ alert, paypalAlert }) => (
           <div className="col-lg-5">
             <img className="img-responsive ileft mr-2 mt-4" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
-          <div className="col-lg-6 ml-2 float-left">
+          <div className="col-lg-6 ml-2">
             <hr className="text-center" />
             <h2 className="intro-text text-center">
               Cancer
@@ -115,36 +115,35 @@ const Home = ({ alert, paypalAlert }) => (
             <h3>Cancer Facts</h3>
             <img className="img-responsive iright mr-1 ml-2 mt-2 mb-2" src={IMAGES.BLOCK} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
             <p>In the time it takes you to read this short page of information, another five people were diagnosed with cancer and two more people will have died from cancer. Cancer kills about one American every minute of every day, or about 1,500 people every 24 hours.</p>
-            <hr />
-            <p>About 1.4 million new cancer cases are expected to be diagnosed in 2006. More than 20 million new cancer cases have been diagnosed since 1990.</p>
-            <hr />
-            <p>One of every two men and one out of three women will get cancer in their lifetimes.</p>
-            <hr />
-            <p>Three out of every four American families will have at least one family member diagnosed with cancer.</p>
-            <hr />
-            <p>About 565,000 Americans are expected to die of cancer in 2006. In the U.S., cancer is the second leading cause of death, responsible for 1 in 4 deaths.</p>
-            <hr />
-            <p>According to the National Institutes of Health, overall costs for cancer in 2005 were nearly $210 billion, including medical costs, the cost of lost productivity due to illness and the cost of lost productivity due to premature death.</p>
-            <hr />
-            <p>
-              {' '}
-              Approximately 77 percent of all cancers are diagnosed in people aged 55 and older.
-            </p>
-            <hr />
-            <p>An estimated 9,500 new cases of cancer are anticipated among children aged 14 and younger in 2006. Other than accidents, cancer is the leading cause of death among children.</p>
+            <ul>
+              <li>About 1.4 million new cancer cases are expected to be diagnosed in 2006. More than 20 million new cancer cases have been diagnosed since 1990.</li>
+
+              <li>One of every two men and one out of three women will get cancer in their lifetimes.</li>
+
+              <li>Three out of every four American families will have at least one family member diagnosed with cancer.</li>
+
+              <li>About 565,000 Americans are expected to die of cancer in 2006. In the U.S., cancer is the second leading cause of death, responsible for 1 in 4 deaths.</li>
+
+              <li>According to the National Institutes of Health, overall costs for cancer in 2005 were nearly $210 billion, including medical costs, the cost of lost productivity due to illness and the cost of lost productivity due to premature death.</li>
+
+              <li>
+                {' '}
+                Approximately 77 percent of all cancers are diagnosed in people aged 55 and older.
+              </li>
+
+              <li>An estimated 9,500 new cases of cancer are anticipated among children aged 14 and younger in 2006. Other than accidents, cancer is the leading cause of death among children.</li>
+            </ul>
+
             <h3>The Good News</h3>
-            <img className="img-responsive ileft mr-2 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive ileft mr-5 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
             <p>Cancer researchers have a clear understanding of how cancer evolves, from the initial disruption of genetic material, and the signals that drive and nourish this growth and cause it to spread. We are at a crossroads in the history of cancer research and we are poised to make exponential gains, to even reduce it to a chronic disease, like diabetes. Early indicators include:</p>
 
-            <hr />
-
-            <p>For the first time in more than 70 years, annual cancer deaths in the United States have fallen. The number of cancer deaths in the U.S. fell between 2002 and 2003, the first annual decrease in total cancer deaths since the 1930s, when nationwide data began to be compiled.</p>
-            <hr />
-            <p>As of January 2002, it is estimated that there are 10.1 million cancer survivors in the U.S. Approximately 14 percent of the 10.1 million estimated survivors were diagnosed more than 20 years ago.</p>
-            <hr />
-            <p>People can reduce their risk of getting cancer through diet, exercise, weight loss and the practice of other healthy lifestyle factors.</p>
-            <hr />
-            <p>Today, 64 percent of adults diagnosed with cancer will be alive in five years. Among children, nearly 75 percent of childhood cancer survivors will be alive after 10 years.</p>
+            <ul>
+              <li>For the first time in more than 70 years, annual cancer deaths in the United States have fallen. The number of cancer deaths in the U.S. fell between 2002 and 2003, the first annual decrease in total cancer deaths since the 1930s, when nationwide data began to be compiled.</li>
+              <li>As of January 2002, it is estimated that there are 10.1 million cancer survivors in the U.S. Approximately 14 percent of the 10.1 million estimated survivors were diagnosed more than 20 years ago.</li>
+              <li>People can reduce their risk of getting cancer through diet, exercise, weight loss and the practice of other healthy lifestyle factors.</li>
+              <li>Today, 64 percent of adults diagnosed with cancer will be alive in five years. Among children, nearly 75 percent of childhood cancer survivors will be alive after 10 years.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -158,7 +157,7 @@ const Home = ({ alert, paypalAlert }) => (
               <strong> help us make a difference</strong>
             </h2>
             <hr />
-            <img src={IMAGES.SPONSORS} className="img-responsive w-100 center-block ml-4 mt-2" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
+            <img src={IMAGES.SPONSORS} className="img-responsive w-75 flex-grow ml-5 mt-2" alt="Logos for Nationwide, ESSA, Pocono Health System, Pocono Cab Company" />
           </div>
         </div>
       </div>
@@ -173,14 +172,14 @@ const Home = ({ alert, paypalAlert }) => (
             </h2>
             <hr />
             <ul>
-              <li><a href="https://www.esasd.net/Domain/17" target="_blank" rel="noreferrer">East Stroudsburg South</a></li>
-              <li><a href="https://www.esasd.net/Domain/16" target="_blank" rel="noreferrer">East Stroudsburg North</a></li>
-              <li><a href="https://high.sburg.org/" target="_blank" rel="noreferrer">Stroudsburg</a></li>
-              <li><a href="https://www.pvbears.org/Domain/57" target="_blank" rel="noreferrer">Pleasant Valley</a></li>
-              <li><a href="https://www.pmsd.org/site/Default.aspx?PageID=13" target="_blank" rel="noreferrer">Pocono Mountain East</a></li>
-              <li><a href="https://www.pmsd.org/site/Default.aspx?PageID=17" target="_blank" rel="noreferrer">Pocono Mountain West</a></li>
+              <li><a href="https://www.esasd.net/Domain/17" target="_blank" rel="noreferrer" className="text-pk">East Stroudsburg South</a></li>
+              <li><a href="https://www.esasd.net/Domain/16" target="_blank" rel="noreferrer" className="text-pk">East Stroudsburg North</a></li>
+              <li><a href="https://high.sburg.org/" target="_blank" rel="noreferrer" className="text-pk">Stroudsburg</a></li>
+              <li><a href="https://www.pvbears.org/Domain/57" target="_blank" rel="noreferrer" className="text-pk">Pleasant Valley</a></li>
+              <li><a href="https://www.pmsd.org/site/Default.aspx?PageID=13" target="_blank" rel="noreferrer" className="text-pk">Pocono Mountain East</a></li>
+              <li><a href="https://www.pmsd.org/site/Default.aspx?PageID=17" target="_blank" rel="noreferrer" className="text-pk">Pocono Mountain West</a></li>
               <li>
-                <a href="http://www.ndhigh.org/" target="_blank" rel="noreferrer">East Stroudsburg Notre Dame</a>
+                <a href="http://www.ndhigh.org/" target="_blank" rel="noreferrer" className="text-pk">East Stroudsburg Notre Dame</a>
                 {' '}
               </li>
             </ul>

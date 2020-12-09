@@ -22,7 +22,7 @@ const Footer = () => (
               <a href="tel:570-460-5156" className="address-bar">(570)460-5156</a>
             </div>
           </div>
-          <div className="col-lg-12 text-center">
+          <div className="col-lg-12 text-center pb-4">
 
             <h6>All rights reserved &copy;2020</h6>
 
