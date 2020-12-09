@@ -108,7 +108,12 @@ const Donate = ({ alert, paypalAlert }) => {
             <div className="box">
 
               <Card>
-                <Card.Header as="h2">Partnership Options</Card.Header>
+                <Card.Header as="h2">
+                  Partnership Options
+
+                  {' '}
+                </Card.Header>
+                <a href="https://drive.google.com/file/d/1UqjLMMp9L0ecgFdzRE2FhVfSw_bMYvaL/view?usp=sharing" className="intro-text text-pk pl-4 pt-2" target="_blank" rel="noreferrer"> Advertising Information</a>
                 <Card.Body>
                   <Container>
                     {content.map((sponser) => {
