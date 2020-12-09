@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { Button } from 'react-bootstrap';
@@ -10,8 +11,7 @@ const Home = ({ alert, paypalAlert }) => (
   <>
     <br />
     <div className="container page">
-
-      <div className="row">
+      <div className="row wide">
         <div className="box">
           {alert}
           <div className="col-lg-12 mx-auto">
@@ -150,7 +150,7 @@ const Home = ({ alert, paypalAlert }) => (
       </div>
 
       <div className="row">
-        <div className="box">
+        <div className="box wide">
           <div className="col-lg-12">
             <hr />
             <h2 className="intro-text text-center">
