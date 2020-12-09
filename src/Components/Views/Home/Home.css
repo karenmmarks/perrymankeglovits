@@ -78,6 +78,10 @@ hr {
   border-color: #999999;
 }
 
+.row {
+  display: inherit !important;
+}
+
 .box {
   margin-bottom: 20px;
   padding: 30px 15px;
@@ -308,4 +312,8 @@ section {
  }
  .text-pk {
   color: #000373;
+}
+
+.wide {
+  width: 100%;
 }
