@@ -1,0 +1,124 @@
+type Account {
+  userName: String
+  player: Player
+}
+
+input AccountInput {
+  userName: String!
+  password: String!
+  player: PlayerInput!
+}
+
+input PlayerInput {
+  currentYear: Int!
+  info: PlayerInfoInput!
+  web: WebInfoInput!
+  printer: PrinterInfoInput!
+}
+
+input PlayerInfoInput {
+	email: String!
+	cellPhone: String!
+	jerseySize: JerseySize!
+}
+
+input WebInfoInput {
+  firstName: String!
+  lastName: String!
+  teamType: TeamType!
+  team: Team!
+	schoolName: SchoolName!
+	userImageUrl: String!
+  role: Role!
+  playerNumber: String!
+}
+
+input PrinterInfoInput {
+  favSportsTeams: String!
+  favMovieTVShows: String!
+	favFoods: String!
+	famousPersonToMeet: String!
+	BBallCareerHighlights: String!
+	threeThingsUnknown: String!
+}
+
+type Player {	
+  currentYear: Int
+  info: PlayerInfo
+  web: WebInfo
+  printer: PrinterInfo
+}
+
+type PlayerInfo {
+	email: String
+	cellPhone: String
+	jerseySize: JerseySize
+}
+
+type WebInfo {
+  firstName: String
+  lastName: String
+  teamType: TeamType
+  team: Team
+	schoolName: SchoolName
+	userImageUrl: String
+  role: Role
+  playerNumber: String
+}
+
+type PrinterInfo {
+  favSportsTeams: String
+  favMovieTVShows: String
+	favFoods: String
+	famousPersonToMeet: String
+	BBallCareerHighlights: String
+	threeThingsUnknown: String
+}
+
+enum JerseySize {
+  XS
+  SM
+  MD
+  LG
+  XL
+  XXL
+}
+
+enum TeamType {
+  GIRLS_TEAM
+  BOYS_TEAM
+}
+
+enum Team {
+  KAG
+  PAG
+  KAB
+  PAB
+}
+
+enum SchoolName {
+  ESS
+  ESN
+  STBG
+  PV
+  PME
+  PMW
+  NDES
+}
+
+enum Role {
+  ADMIN
+  COACH
+  PLAYER
+}
+
+type Query {
+  login (userName: String!, password: String!): Account
+  player (userName: String!): Player
+  players: [Player]
+} 
+
+type Mutation {
+  createAccount (account: AccountInput!): 
+}
+

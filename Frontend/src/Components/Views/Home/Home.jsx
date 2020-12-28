@@ -11,10 +11,10 @@ const Home = ({ alert, paypalAlert }) => (
   <>
     <br />
     <div className="container page">
-      <div className="row wide">
+      <div className="row">
         <div className="box">
           {alert}
-          <div className="col-lg-12 mx-auto">
+          <div className="col-lg-12 col-md-8 mx-auto">
             <img className="img-responsive ileft mx-auto mt-2" src={IMAGES.ARTHOME} alt="Arthur Perryman" />
             <div className="col-md-5 float-left">
               <h1 className="text-center text-pk">
@@ -38,7 +38,7 @@ const Home = ({ alert, paypalAlert }) => (
                 Help in the Cancer Battle!
               </h2>
               <hr />
-              <img className="img-responsive float-left w-50" src={IMAGES.BREAST_CANCER} alt="Pink Breast Cancer Ribbon Join the Fight" />
+              <img className="img-responsive ileft mt-2 mb-2" src={IMAGES.BREAST_CANCER} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
               <Button variant="warning" onClick={() => paypalAlert()}>
                 Donate via PayPal
@@ -47,7 +47,7 @@ const Home = ({ alert, paypalAlert }) => (
               {' '}
               <br />
               <br />
-              <h2 className="intro-text text-center">
+              <h2 className="intro-text">
                 Support the Battle Against Cancer,
                 <strong> Make a Donation Today</strong>
               </h2>
@@ -55,17 +55,17 @@ const Home = ({ alert, paypalAlert }) => (
 
               <hr />
             </div>
-            <img className="img-responsive ileft center-block mt-2" src={IMAGES.ALHOME} alt="Al Keglovits" />
+            <img className="img-responsive ileft mt-2" src={IMAGES.ALHOME} alt="Al Keglovits" />
           </div>
         </div>
       </div>
 
       <div className="row">
         <div className="box">
-          <div className="col-lg-5">
-            <img className="img-responsive ileft mr-2 mt-4" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+          <div className="col-lg-4">
+            <img className="img-responsive ileft mt-4 mb-2" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
-          <div className="col-lg-6 ml-2">
+          <div className="col-lg-8 ml-2">
             <hr className="text-center" />
             <h2 className="intro-text text-center">
               Cancer
@@ -102,7 +102,7 @@ const Home = ({ alert, paypalAlert }) => (
 
       <div className="row">
         <div className="box">
-          <div className="col-lg-12 .col-md-8 mx-auto">
+          <div className="col-lg-12 col-md-8 mx-auto">
 
             <hr className="text-center" />
             <h2 className="intro-text text-center">

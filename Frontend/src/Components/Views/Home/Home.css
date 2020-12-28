@@ -29,6 +29,7 @@ p {
 hr {
   max-width: 400px;
   border-color: #999999;
+  overflow: hidden;
 }
 
 .brand,
@@ -212,18 +213,20 @@ td {
       color: #fff;
   }
 
+
   .ileft {
     float: left;
+    width: 30%;
   }
 
   .iright {
     float: right;
   }
 
-section {
-  padding-top: 450px; 
-  margin-top: -450px;
-}
+  section {
+    padding-top: 450px; 
+    margin-top: -450px;
+  }
 
   .top-divider {
       margin-top: 0;
@@ -233,8 +236,6 @@ section {
       float: left;
       margin-right: 25px;
   }
-
-  
 
   .address-bar {
       display: inherit;
