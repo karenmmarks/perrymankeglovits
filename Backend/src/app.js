@@ -3,6 +3,7 @@ const http = require('http');
 const cors = require('cors');
 const { ApolloServer } = require('apollo-server-express');
 const { importSchema } = require('graphql-import');
+const resolver = require('./resolver');
 
 const createApp = () => {
   const app = express();

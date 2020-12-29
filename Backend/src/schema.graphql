@@ -1,78 +1,30 @@
 type Account {
   userName: String
+  firstName: String
+  lastName: String
+  email: String
+  currentYear: Int
   player: Player
 }
 
 input AccountInput {
   userName: String!
   password: String!
-  player: PlayerInput!
-}
-
-input PlayerInput {
-  currentYear: Int!
-  info: PlayerInfoInput!
-  web: WebInfoInput!
-  printer: PrinterInfoInput!
-}
-
-input PlayerInfoInput {
-	email: String!
-	cellPhone: String!
-	jerseySize: JerseySize!
-}
-
-input WebInfoInput {
   firstName: String!
   lastName: String!
-  teamType: TeamType!
-  team: Team!
-	schoolName: SchoolName!
-	userImageUrl: String!
-  role: Role!
-  playerNumber: String!
-}
-
-input PrinterInfoInput {
-  favSportsTeams: String!
-  favMovieTVShows: String!
-	favFoods: String!
-	famousPersonToMeet: String!
-	BBallCareerHighlights: String!
-	threeThingsUnknown: String!
+  email: String!
 }
 
 type Player {	
-  currentYear: Int
   info: PlayerInfo
   web: WebInfo
   printer: PrinterInfo
 }
 
-type PlayerInfo {
-	email: String
-	cellPhone: String
-	jerseySize: JerseySize
-}
-
-type WebInfo {
-  firstName: String
-  lastName: String
-  teamType: TeamType
-  team: Team
-	schoolName: SchoolName
-	userImageUrl: String
-  role: Role
-  playerNumber: String
-}
-
-type PrinterInfo {
-  favSportsTeams: String
-  favMovieTVShows: String
-	favFoods: String
-	famousPersonToMeet: String
-	BBallCareerHighlights: String
-	threeThingsUnknown: String
+input PlayerInput {
+  info: PlayerInfoInput!
+  web: WebInfoInput!
+  printer: PrinterInfoInput!
 }
 
 enum JerseySize {
@@ -82,6 +34,16 @@ enum JerseySize {
   LG
   XL
   XXL
+}
+
+type PlayerInfo {
+	cellPhone: String
+	jerseySize: JerseySize
+}
+
+input PlayerInfoInput {
+	cellPhone: String!
+	jerseySize: JerseySize!
 }
 
 enum TeamType {
@@ -112,6 +74,42 @@ enum Role {
   PLAYER
 }
 
+type WebInfo {
+  teamType: TeamType
+  team: Team
+	schoolName: SchoolName
+	userImageUrl: String
+  role: Role
+  playerNumber: String
+}
+
+input WebInfoInput {
+  teamType: TeamType!
+  team: Team!
+	schoolName: SchoolName!
+	userImageUrl: String!
+  role: Role!
+  playerNumber: String!
+}
+
+type PrinterInfo {
+  favSportsTeams: String
+  favMovieTVShows: String
+	favFoods: String
+	famousPersonToMeet: String
+	BBallCareerHighlights: String
+	threeThingsUnknown: String
+}
+
+input PrinterInfoInput {
+  favSportsTeams: String!
+  favMovieTVShows: String!
+	favFoods: String!
+	famousPersonToMeet: String!
+	BBallCareerHighlights: String!
+	threeThingsUnknown: String!
+}
+
 type Query {
   login (userName: String!, password: String!): Account
   player (userName: String!): Player
@@ -119,6 +117,7 @@ type Query {
 } 
 
 type Mutation {
-  createAccount (account: AccountInput!): 
+  createAccount (account: AccountInput!):  Account
+  createPlayer (player: PlayerInput!, userName: String!): Player
 }
 

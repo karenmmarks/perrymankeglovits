@@ -1,8 +1,10 @@
+const dotenv = require('dotenv');
 const app = require('./app');
 
-const port = process.env.PORT || 4000;
+dotenv.config();
+const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
+app().listen(port, () => {
   // eslint-disable-next-line no-console
   console.log(`Server ready at http://localhost:${port}`);
 });
