@@ -8,11 +8,11 @@ type Account {
 }
 
 input AccountInput {
-  userName: String!
-  password: String!
-  firstName: String!
-  lastName: String!
-  email: String!
+  userName: String
+  password: String
+  firstName: String
+  lastName: String
+  email: String
 }
 
 type Player {	
@@ -22,9 +22,9 @@ type Player {
 }
 
 input PlayerInput {
-  info: PlayerInfoInput!
-  web: WebInfoInput!
-  printer: PrinterInfoInput!
+  info: PlayerInfoInput
+  web: WebInfoInput
+  printer: PrinterInfoInput
 }
 
 enum JerseySize {
@@ -42,8 +42,8 @@ type PlayerInfo {
 }
 
 input PlayerInfoInput {
-	cellPhone: String!
-	jerseySize: JerseySize!
+	cellPhone: String
+	jerseySize: JerseySize
 }
 
 enum TeamType {
@@ -75,8 +75,11 @@ enum Role {
 }
 
 type WebInfo {
+  userName: String
   teamType: TeamType
   team: Team
+  firstName: String
+  lastName: String
 	schoolName: SchoolName
 	userImageUrl: String
   role: Role
@@ -84,15 +87,18 @@ type WebInfo {
 }
 
 input WebInfoInput {
-  teamType: TeamType!
-  team: Team!
-	schoolName: SchoolName!
-	userImageUrl: String!
-  role: Role!
-  playerNumber: String!
+  teamType: TeamType
+  team: Team
+  firstName: String
+  lastName: String
+	schoolName: SchoolName
+	userImageUrl: String
+  role: Role
+  playerNumber: String
 }
 
 type PrinterInfo {
+  userName: String
   favSportsTeams: String
   favMovieTVShows: String
 	favFoods: String
@@ -102,12 +108,12 @@ type PrinterInfo {
 }
 
 input PrinterInfoInput {
-  favSportsTeams: String!
-  favMovieTVShows: String!
-	favFoods: String!
-	famousPersonToMeet: String!
-	BBallCareerHighlights: String!
-	threeThingsUnknown: String!
+  favSportsTeams: String
+  favMovieTVShows: String
+	favFoods: String
+	famousPersonToMeet: String
+	BBallCareerHighlights: String
+	threeThingsUnknown: String
 }
 
 type Query {
@@ -119,5 +125,7 @@ type Query {
 type Mutation {
   createAccount (account: AccountInput!):  Account
   createPlayer (player: PlayerInput!, userName: String!): Player
+  updateAccount (account: AccountInput!):  Account
+  updatePlayer (player: PlayerInput!, userName: String!): Player
 }
 

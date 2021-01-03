@@ -42,7 +42,7 @@ const update = (table, object, where) => new Promise((resolve, reject) => {
 
   const query = `
     UPDATE ${table}
-    SET (${Object.keys(object).map((key) => `${key}=${object[key]}`).join(',')})
+    SET (${Object.keys(object).map((key) => `${key}="${object[key]}"`).join(',')})
     WHERE ${where}`;
 
   connection.query(query, (err) => {

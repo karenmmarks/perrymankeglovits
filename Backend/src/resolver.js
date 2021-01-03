@@ -1,6 +1,30 @@
 const bcrypt = require('bcrypt');
 const { select, insert, update } = require('./database/database');
 
+const getPlayer = async (_, args) => {
+  const { userName } = args;
+  const player = await select('PlayerInfo', 'userName', `userName="${userName}"`);
+
+  if (player && player.length > 0) {
+    const data = {};
+    let currKey = '';
+
+    Object.keys(player[0]).forEach((key) => {
+      if (key.includes('Split')) {
+        currKey = player[0][key];
+      } else {
+        data[currKey] = {
+          ...(data[currKey] && data[currKey]),
+          [key]: player[0][key],
+        };
+      }
+    });
+
+    return data;
+  }
+  return null;
+};
+
 module.exports = {
   Query: {
     login: async (_, args) => {
@@ -9,45 +33,39 @@ module.exports = {
       const account = await select('UserAccounts', 'userName', `userName="${userName}"`);
 
       if (account && account.length > 0) {
-        if (await bcrypt.compare(password, account[0].password)) return account[0];
+        if (await bcrypt.compare(password, account[0].password)) {
+          return {
+            ...account[0],
+            player: async () => {
+              const player = await getPlayer(null, { userName });
+              return player;
+            },
+          };
+        }
         throw new Error('Your password is incorrect, please try again.');
       }
       throw new Error('Username does not exist.');
     },
-    player: async (_, args) => {
-      const { userName } = args;
-      const player = {
-        info: () => select('PlayerInfo', 'userName', `userName="${userName}"`)[0],
-        web: () => select('WebInfo', 'userName', `userName="${userName}"`)[0],
-        printer: () => select('PrinterInfo', 'userName', `userName="${userName}"`)[0],
-      };
-
-      return player;
-    },
+    player: getPlayer,
     players: async () => {
-      const accounts = await select('UserAccounts', 'userName', null);
-      const players = await accounts.map(({ userName }) => ({
-        info: async () => {
-          const info = await select('PlayerInfo', 'userName', `userName="${userName}"`);
+      const players = await select('PlayerInfo', 'userName', null);
 
-          if (info.length > 0) return info[0];
-          return null;
-        },
-        web: async () => {
-          const web = await select('WebInfo', 'userName', `userName="${userName}"`);
+      return players.map((player) => {
+        const data = {};
+        let currKey = '';
+        Object.keys(player).forEach((key) => {
+          if (key.includes('Split')) {
+            currKey = player[key];
+          } else {
+            data[currKey] = {
+              ...(data[currKey] && data[currKey]),
+              [key]: player[key],
+            };
+          }
+        });
 
-          if (web.length > 0) return web[0];
-          return null;
-        },
-        printer: async () => {
-          const printer = await select('PrinterInfo', 'userName', `userName="${userName}"`);
-
-          if (printer.length > 0) return printer[0];
-          return null;
-        },
-      }));
-
-      return players;
+        return data;
+      });
     },
   },
   Mutation: {
@@ -73,9 +91,51 @@ module.exports = {
       const { player, userName } = args;
       const { info, web, printer } = player;
 
-      await insert('PlayerInfo', { ...info, userName });
-      await insert('WebInfo', { ...web, userName });
-      await insert('PrinterInfo', { ...printer, userName });
+      await insert('PlayerInfo', {
+        userName,
+        ...info,
+        ...web,
+        ...printer,
+      });
+
+      return player;
+    },
+
+    updateAccount: async (_, args) => {
+      const { account } = args;
+      if (account.password || account.userName) throw new Error('Cannot update username or password with updateAccount');
+
+      await update('UserAccounts', account);
+
+      return account;
+    },
+
+    updateUserName: async (_, args) => {
+      const { oldUserName } = args;
+      const { newUserName } = args;
+
+      const account = await select('UserAccounts', 'userName', `userName="${oldUserName}"`);
+      const player = await select('PlayerInfo', 'userName', `userName="${oldUserName}"`);
+
+      const { player, newUserName } = args;
+      const { info, web, printer } = player;
+
+
+
+      await insert('UserAccounts', account);
+
+    },
+
+    updatePlayer: async (_, args) => {
+      const { player, userName } = args;
+      const { info, web, printer } = player;
+
+      await update('PlayerInfo', {
+        userName,
+        ...info,
+        ...web,
+        ...printer,
+      });
 
       return player;
     },
