@@ -121,15 +121,15 @@ module.exports = {
 
       if (account && account.length > 0) {
         await insert('UserAccounts', {
-          userName: newUserName,
           ...account[0],
+          userName: newUserName,
         });
       }
 
       if (player && player.length > 0) {
         await insert('PlayerInfo', {
-          userName: newUserName,
           ...player[0],
+          userName: newUserName,
         });
       }
 
@@ -137,8 +137,8 @@ module.exports = {
       await deleteFrom('PlayerInfo', `username="${oldUserName}"`);
 
       return {
-        userName: newUserName,
         ...account[0],
+        userName: newUserName,
       };
     },
 
@@ -149,8 +149,8 @@ module.exports = {
       if (account && account.length > 0) {
         if (await bcrypt.compare(oldPassword, account[0].password)) {
           await update('UserAccounts', {
-            password: await bcrypt.hash(String(newPassword), 10),
             ...account[0],
+            password: await bcrypt.hash(String(newPassword), 10),
           });
 
           return account[0];
