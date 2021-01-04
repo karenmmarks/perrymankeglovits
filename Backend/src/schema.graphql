@@ -126,6 +126,8 @@ type Mutation {
   createAccount (account: AccountInput!):  Account
   createPlayer (player: PlayerInput!, userName: String!): Player
   updateAccount (account: AccountInput!):  Account
+  updateUserName (oldUserName: String!, newUserName: String!): Account
+  updatePassword (userName: String!, oldPassword: String!, newPassword: String!): Account
   updatePlayer (player: PlayerInput!, userName: String!): Player
 }
 

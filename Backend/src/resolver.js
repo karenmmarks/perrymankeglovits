@@ -1,5 +1,7 @@
 const bcrypt = require('bcrypt');
-const { select, insert, update } = require('./database/database');
+const {
+  select, insert, update, deleteFrom,
+} = require('./database/database');
 
 const getPlayer = async (_, args) => {
   const { userName } = args;
@@ -68,6 +70,7 @@ module.exports = {
       });
     },
   },
+
   Mutation: {
     createAccount: async (_, args) => {
       const { account } = args;
@@ -111,19 +114,50 @@ module.exports = {
     },
 
     updateUserName: async (_, args) => {
-      const { oldUserName } = args;
-      const { newUserName } = args;
+      const { oldUserName, newUserName } = args;
 
       const account = await select('UserAccounts', 'userName', `userName="${oldUserName}"`);
       const player = await select('PlayerInfo', 'userName', `userName="${oldUserName}"`);
 
-      const { player, newUserName } = args;
-      const { info, web, printer } = player;
+      if (account && account.length > 0) {
+        await insert('UserAccounts', {
+          userName: newUserName,
+          ...account[0],
+        });
+      }
 
+      if (player && player.length > 0) {
+        await insert('PlayerInfo', {
+          userName: newUserName,
+          ...player[0],
+        });
+      }
 
+      await deleteFrom('UserAccounts', `username="${oldUserName}"`);
+      await deleteFrom('PlayerInfo', `username="${oldUserName}"`);
 
-      await insert('UserAccounts', account);
+      return {
+        userName: newUserName,
+        ...account[0],
+      };
+    },
 
+    updatePassword: async (_, args) => {
+      const { userName, oldPassword, newPassword } = args;
+      const account = await select('UserAccounts', 'userName', `userName="${userName}"`);
+
+      if (account && account.length > 0) {
+        if (await bcrypt.compare(oldPassword, account[0].password)) {
+          await update('UserAccounts', {
+            password: await bcrypt.hash(String(newPassword), 10),
+            ...account[0],
+          });
+
+          return account[0];
+        }
+        throw new Error('Your password is incorrect, please try again.');
+      }
+      throw new Error('Username does not exist.');
     },
 
     updatePlayer: async (_, args) => {

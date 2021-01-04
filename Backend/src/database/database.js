@@ -84,8 +84,27 @@ const select = (table, orderByProp, where, direction = 'ASC') => new Promise((re
   });
 });
 
+const deleteFrom = (table, where) => new Promise((resolve, reject) => {
+  const connection = connect();
+
+  const query = `
+  DELETE FROM ${table} 
+  WHERE ${where}`;
+
+  connection.query(query, (err) => {
+    if (err) {
+      connection.end();
+      reject(err);
+    } else {
+      connection.end();
+      resolve();
+    }
+  });
+});
+
 module.exports = {
   insert,
   update,
   select,
+  deleteFrom,
 };
