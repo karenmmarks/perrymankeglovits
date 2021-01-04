@@ -10,21 +10,21 @@ const VideoHighlights = () => (
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
-            Video Highlights Click me!
+            Video Highlights Coming Soon
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="0">
-          <Card.Body>Hello! I'm the body</Card.Body>
+          <Card.Body>Hello! I'm the card body</Card.Body>
         </Accordion.Collapse>
       </Card>
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant="link" eventKey="1">
-            Click me!
+            Video Highlights 2 Coming Soon
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey="1">
-          <Card.Body>Hello! I'm another body</Card.Body>
+          <Card.Body>Hello! I'm another card body</Card.Body>
         </Accordion.Collapse>
       </Card>
     </Accordion>

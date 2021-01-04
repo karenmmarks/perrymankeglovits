@@ -216,11 +216,25 @@ td {
 
   .ileft {
     float: left;
-    width: 30%;
+    width: 28%;
   }
 
   .iright {
     float: right;
+  }
+
+  .spinileft{
+      float: left;
+      width: 100%;
+  }
+  .cancerileft {
+    float: left;
+    width: 25%;
+  }
+
+  .canceriright {
+    float: right;
+    width: 20%;
   }
 
   section {

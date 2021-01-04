@@ -45,7 +45,7 @@ const Home = ({ alert, paypalAlert }) => (
               </Button>
 
               {' '}
-              <br />
+
               <br />
               <h2 className="intro-text">
                 Support the Battle Against Cancer,
@@ -62,10 +62,10 @@ const Home = ({ alert, paypalAlert }) => (
 
       <div className="row">
         <div className="box">
-          <div className="col-lg-4">
-            <img className="img-responsive ileft mt-4 mb-2" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+          <div className="col-lg-3">
+            <img className="img-responsive spinileft mt-4 mb-4" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
           </div>
-          <div className="col-lg-8 ml-2">
+          <div className="col-lg-9">
             <hr className="text-center" />
             <h2 className="intro-text text-center">
               Cancer
@@ -113,7 +113,7 @@ const Home = ({ alert, paypalAlert }) => (
             </h2>
             <hr />
             <h3>Cancer Facts</h3>
-            <img className="img-responsive iright mr-1 ml-2 mt-2 mb-2" src={IMAGES.BLOCK} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive canceriright mr-1 ml-2 mt-2 mb-2" src={IMAGES.BLOCK} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
             <p>In the time it takes you to read this short page of information, another five people were diagnosed with cancer and two more people will have died from cancer. Cancer kills about one American every minute of every day, or about 1,500 people every 24 hours.</p>
             <ul>
               <li>About 1.4 million new cancer cases are expected to be diagnosed in 2006. More than 20 million new cancer cases have been diagnosed since 1990.</li>
@@ -135,7 +135,7 @@ const Home = ({ alert, paypalAlert }) => (
             </ul>
 
             <h3>The Good News</h3>
-            <img className="img-responsive ileft mr-5 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive cancerileft mr-5 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
             <p>Cancer researchers have a clear understanding of how cancer evolves, from the initial disruption of genetic material, and the signals that drive and nourish this growth and cause it to spread. We are at a crossroads in the history of cancer research and we are poised to make exponential gains, to even reduce it to a chronic disease, like diabetes. Early indicators include:</p>
 
             <ul>
