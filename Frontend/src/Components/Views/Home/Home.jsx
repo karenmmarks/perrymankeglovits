@@ -13,49 +13,50 @@ const Home = ({ alert, paypalAlert }) => (
     <div className="container page">
       <div className="row">
         <div className="box">
-          {alert}
-          <div className="col-lg-12 col-md-8 mx-auto">
+
+          <div className="col-lg-12 mx-auto clearfix">
             <img className="img-responsive ileft mx-auto mt-2" src={IMAGES.ARTHOME} alt="Arthur Perryman" />
             <div className="col-md-5 float-left">
               <h1 className="text-center text-pk">
                 Perryman & Keglovits Foundation
               </h1>
 
-              <h1 className="brand-name text-center"><small>Perryman Keglovits 18th Annual Tribute Basketball Game 2020</small></h1>
+              <h2 className="text-center"><small>Perryman Keglovits 18th Annual Tribute Basketball Game 2021</small></h2>
               <br />
               <hr />
-              <h2 className="intro-text text-center pb-1">
+              <h3 className="intro-text text-center pb-1">
                 Details to be determined soon
                 <br />
-              </h2>
-              {/* <h2 class="intro-text text-center pb-2">East Stroudsburg
+              </h3>
+              {/* <h3 class="intro-text text-center pb-2">East Stroudsburg
               University Koehler Fieldhouse  <strong class="pink">
-              Girls 6pm - Boys 7:30pm</strong> </h2> */}
+              Girls 6pm - Boys 7:30pm</strong> </h3> */}
               <hr />
-              <h2 className="intro-text text-center">
+              <h4 className="intro-text text-center">
                 <strong>Monroe County&apos;s Senior All-Star Players  </strong>
                 {' '}
                 Help in the Cancer Battle!
-              </h2>
+              </h4>
               <hr />
-              <img className="img-responsive ileft mt-2 mb-2" src={IMAGES.BREAST_CANCER} alt="Pink Breast Cancer Ribbon Join the Fight" />
+              {alert}
+              <img className="img-responsive ileft-ribbon mt-2 mb-2" src={IMAGES.BREAST_CANCER} alt="Pink Breast Cancer Ribbon Join the Fight" />
 
-              <Button variant="warning" onClick={() => paypalAlert()}>
+              <Button className="donate-btn" variant="warning" onClick={() => paypalAlert()}>
                 Donate via PayPal
               </Button>
 
               {' '}
 
               <br />
-              <h2 className="intro-text">
+              <h5 className="intro-text">
                 Support the Battle Against Cancer,
                 <strong> Make a Donation Today</strong>
-              </h2>
+              </h5>
               <br />
 
               <hr />
             </div>
-            <img className="img-responsive ileft mt-2" src={IMAGES.ALHOME} alt="Al Keglovits" />
+            <img className="img-responsive iright mt-2" src={IMAGES.ALHOME} alt="Al Keglovits" />
           </div>
         </div>
       </div>
@@ -63,7 +64,8 @@ const Home = ({ alert, paypalAlert }) => (
       <div className="row">
         <div className="box">
           <div className="col-lg-3">
-            <img className="img-responsive spinileft mt-4 mb-4" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive spinileft mt-5 mb-5 pt-2 pb-2" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <br />
           </div>
           <div className="col-lg-9">
             <hr className="text-center" />

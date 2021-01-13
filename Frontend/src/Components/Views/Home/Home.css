@@ -198,6 +198,9 @@ td {
   padding-left: 6px;
 }
 
+.donate-btn {
+  margin: 0 5px 5px 5px;
+}
 /*------------------------RESPONSIVE CSS--------------------------*/
 @media screen and (min-width:768px) {
   .brand {
@@ -207,12 +210,11 @@ td {
       text-align: center;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
       font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 5em;
+      font-size: 4em;
       font-weight: 700;
       line-height: normal;
       color: #fff;
   }
-
 
   .ileft {
     float: left;
@@ -221,11 +223,12 @@ td {
 
   .iright {
     float: right;
+    width: 28%;
   }
 
-  .spinileft{
-      float: left;
-      width: 100%;
+  .spinileft {
+    float: left;
+    width: 90%;
   }
   .cancerileft {
     float: left;
@@ -234,7 +237,7 @@ td {
 
   .canceriright {
     float: right;
-    width: 20%;
+    width: 22%;
   }
 
   section {
@@ -313,7 +316,7 @@ td {
   
 }
 
-@media (max-width:760px){
+@media (max-width:767px){
   .ileft{
     float: none;
     width: 100%;
@@ -324,7 +327,25 @@ td {
     width: 100%;
     align-items: center;
    }
- }
+
+   .ileft-ribbon {
+    float: none;
+    width: 90%;
+    align-items: center;
+   }
+   .spinileft{
+    float: left;
+    width: 100%;
+    align-items: center;
+  }
+  .donate-btn {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+  }
+}
+
  .text-pk {
   color: #000373;
 }

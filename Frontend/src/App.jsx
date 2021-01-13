@@ -20,16 +20,16 @@ const App = () => {
     setAlert(
       <Alert variant="dark">
         <Row>
-          <Col sm={12} md={8}>
+          <Col lg={12} md={12} sm={12}>
             <Alert.Heading>We are heading over to PayPal now</Alert.Heading>
           </Col>
-          <Col sm={12} md={4}>
-            <Button href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD" variant="outline-info">
-              Continue to PayPal
+          <Col lg={12} md={12} sm={12}>
+            <Button className="mb-2" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=76FEZSCQWNMQC&currency_code=USD" variant="outline-info">
+              <strong>Continue to PayPal</strong>
             </Button>
             {' '}
-            <Button onClick={() => setAlert()} variant="outline-danger">
-              No take me back!
+            <Button className="mb-2" onClick={() => setAlert()} variant="outline-danger">
+              <strong>No take me back!</strong>
             </Button>
           </Col>
         </Row>
