@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
-import PKLogo from '../../Assets/Images/pklogo.jpg';
+import PKLogo from '../../Assets/Images/pklogo.png';
 import './Header.css';
 
 const Header = () => (
@@ -15,7 +15,7 @@ const Header = () => (
           <span className="d-flex float-right text-pk font-weight-bold">
             Perryman
             <br />
-            & Keglovits
+            Keglovits
             <br />
             Foundation
           </span>

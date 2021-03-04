@@ -18,7 +18,7 @@ const Home = ({ alert, paypalAlert }) => (
             <img className="img-responsive ileft mx-auto mt-2" src={IMAGES.ARTHOME} alt="Arthur Perryman" />
             <div className="col-md-5 float-left">
               <h1 className="text-center text-pk">
-                Perryman & Keglovits Foundation
+                Perryman Keglovits Foundation
               </h1>
 
               <h2 className="text-center"><small>Perryman Keglovits 18th Annual Tribute Basketball Game 2021</small></h2>
@@ -64,11 +64,12 @@ const Home = ({ alert, paypalAlert }) => (
       <div className="row">
         <div className="box">
           <div className="col-lg-3">
-            <img className="img-responsive spinileft mt-5 mb-5 pt-2 pb-2" src={IMAGES.SPIN2020} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive spinileft mt-5 mb-5 pt-5 pb-5" src={IMAGES.SPIN2021} alt="Perryman Keglovits 18th Annual All-Star Game for 2021and the battle against Breast Cancer" />
             <br />
           </div>
           <div className="col-lg-9">
-            <hr className="text-center" />
+            <br />
+            <hr />
             <h2 className="intro-text text-center">
               Cancer
               {' '}
@@ -77,7 +78,7 @@ const Home = ({ alert, paypalAlert }) => (
             </h2>
 
             <p>
-              Support the Perryman & Keglovits 18th Annual All-Star Game for 2020 and the
+              Support the Perryman Keglovits 18th Annual All-Star Game for 2021 and the
               battle against Breast Cancer this year. Details will be determined soon.
             </p>
             <hr />
@@ -93,7 +94,7 @@ const Home = ({ alert, paypalAlert }) => (
             </p>
             <hr />
             <p>
-              The Perryman & Keglovits All-Star Game celebrates the lives of local
+              The Perryman Keglovits All-Star Game celebrates the lives of local
               basketball stars Arthur Perryman and Al Keglovits, and all who have
               fought the battle of cancer.
             </p>
@@ -115,7 +116,7 @@ const Home = ({ alert, paypalAlert }) => (
             </h2>
             <hr />
             <h3>Cancer Facts</h3>
-            <img className="img-responsive canceriright mr-1 ml-2 mt-2 mb-2" src={IMAGES.BLOCK} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive canceriright mr-1 ml-2 mt-2 mb-2" src={IMAGES.BLOCK} alt="Perryman Keglovits All-Star Basketball Game jump shot with a block" />
             <p>In the time it takes you to read this short page of information, another five people were diagnosed with cancer and two more people will have died from cancer. Cancer kills about one American every minute of every day, or about 1,500 people every 24 hours.</p>
             <ul>
               <li>About 1.4 million new cancer cases are expected to be diagnosed in 2006. More than 20 million new cancer cases have been diagnosed since 1990.</li>
@@ -137,7 +138,7 @@ const Home = ({ alert, paypalAlert }) => (
             </ul>
 
             <h3>The Good News</h3>
-            <img className="img-responsive cancerileft mr-5 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman & Keglovits 18th Annual All-Star Game for 2020 and the battle against Breast Cancer" />
+            <img className="img-responsive cancerileft mr-5 ml-1 mt-2 mb-2" src={IMAGES.CHARGE} alt="Perryman Keglovits All-Star Basketball Game girls game player charging towards the net" />
             <p>Cancer researchers have a clear understanding of how cancer evolves, from the initial disruption of genetic material, and the signals that drive and nourish this growth and cause it to spread. We are at a crossroads in the history of cancer research and we are poised to make exponential gains, to even reduce it to a chronic disease, like diabetes. Early indicators include:</p>
 
             <ul>

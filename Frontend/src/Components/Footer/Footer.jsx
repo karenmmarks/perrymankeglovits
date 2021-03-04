@@ -11,7 +11,7 @@ const Footer = () => (
             <br />
 
             <div className="address-bar">
-              Perryman & Keglovits Foundation
+              Perryman Keglovits Foundation
               <br />
               PO Box 274  | East Stroudsburg, PA 18301
               {' '}
@@ -24,7 +24,7 @@ const Footer = () => (
           </div>
           <div className="col-lg-12 text-center pb-4">
 
-            <h6>All rights reserved &copy;2020</h6>
+            <h3 className="intro-text"><small>All rights reserved &copy;2021</small></h3>
 
           </div>
         </div>
