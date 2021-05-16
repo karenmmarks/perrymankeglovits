@@ -33,7 +33,7 @@ const About = () => (
               local seniors to showcase their talents in one last event prior to the
               end of a great high school basketball career. Involuntarily we were touched
               to have Arthur's name on such an event that would represent integrity, hard work
-              and perseverance. What we did not realize is the affect it would continue to
+              and perseverance. What we did not realize is the effect it would continue to
               have on our family five years later.
             </p>
             <p>
@@ -51,14 +51,14 @@ const About = () => (
               is a way for us to continue to share a commonality among our community - remembering
               and honoring the life of Arthur Perryman III.
             </blockquote>
-            <img className="img-responsive float-right w-25 center-block m-2" src={IMAGES.STACYHIGHTOP} alt="Perryman Keglovits Tribute Basketball Game collage of photos" />
+            <img className="img-responsive float-right w-25 center-block m-2" src={IMAGES.STACYHIGHTOP} alt="Rich Laverdure, Stacy Perryman, and Rob Madsen with a large high top" />
             <p>
               What Art has contributed with his great talent on the basketball court along with his
               savvy personality will never be forgotten to those who have known him personally or
               simply just enjoyed watching his Jordanesque glide-to the basket or shot well beyond
               the three point line. Who could ever forget that infamous headband in which he wore?
               Partly, I believe he wore it so that we, as fans, could tell him and Mike Long apart.
-              And naturally he wore #31, the same number is favorite sister wore during her playing
+              And naturally he wore #31, the same number his favorite sister wore during her playing
               career, but Felicia and Chrissy may have something to say about that. But, whatever
               the reason, he left an impression on a diverse people in such a short span of life.
             </p>
@@ -96,7 +96,7 @@ const About = () => (
             <br />
             <div className="col-lg-12 text-center">
 
-              <img className="img-responsive w-100 center-block mb-2" src={IMAGES.FOUNDATION} alt="Perryman Keglovits Tribute Basketball Game collage of photos" />
+              <img className="img-responsive w-100 center-block mb-2" src={IMAGES.FOUNDATION} alt="Perryman Keglovits Foundation Board of Directors" />
               <br />
               <p className="text-left">
                 Our Mission is to showcase the talent of local basketball players by

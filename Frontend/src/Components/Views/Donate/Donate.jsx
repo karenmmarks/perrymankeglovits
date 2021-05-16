@@ -73,7 +73,7 @@ const Donate = ({ alert, paypalAlert }) => {
                     If you or your business would like to be a part of our game program,
                     please make a donation in one of the below amounts, and under &quot;Add
                     special instructions to the seller&quot; mention the package you&apos;ve
-                    selected. We will be in touch to the email address you provide.
+                    selected. We will be in touch using the email address you provide.
                   </Card.Text>
                   <Card.Text>
                     We are happy to accept contributions of any amount. If you would like to
@@ -150,7 +150,7 @@ const Donate = ({ alert, paypalAlert }) => {
                   </Container>
                 </Card.Body>
                 <Card.Footer>
-                  Deadline: March 1st, 2019
+                  Deadline: March 1st, 2022
                 </Card.Footer>
               </Card>
             </div>
