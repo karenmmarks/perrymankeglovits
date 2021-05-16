@@ -8,6 +8,7 @@ const config = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'index.js',
+    publicPath: path.join(__dirname, '/dist'),
   },
 
   devServer: {
@@ -36,6 +37,13 @@ const config = {
         test: /\.png|jpg|jpeg|gif|svg?$/,
         exclude: /node_modules/,
         loader: 'file-loader',
+      },
+      {
+        test: /\.([Jj][Pp][Ee]?[Gg]|png|gif|svg)/,
+        loader: 'file-loader',
+        options: {
+          name: '/public/images/[name].[ext]',
+        },
       },
     ],
   },
